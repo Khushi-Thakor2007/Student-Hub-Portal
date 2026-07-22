@@ -1,228 +1,102 @@
-#### **Requirement Analysis**
+Project Title
 
-**1. Project Title**
+Student Hub Portal
 
+Purpose
 
+The Student Hub Portal is a web-based application designed to provide students with a single platform to access academic information, communicate with the institution, and manage their activities efficiently.
 
-Student Hub – Student Portal
+Functional Requirements
+1. Home
+Display welcome message.
+Provide navigation to all pages.
+Show latest announcements or highlights.
+2. Login
+Students can log in using their username and password.
+Validate user credentials.
+Redirect users to the dashboard after successful login.
+3. Register
+Allow new students to create an account.
+Collect student details (Name, Email, Enrollment Number, Password, etc.).
+Validate input data before registration.
+4. Dashboard
 
+The dashboard provides quick access to all student services.
 
-
-**2. Problem Statement**
-
-
-
-Students often have to use multiple platforms to access study materials, check results, monitor performance, and communicate with the college. This creates confusion and wastes time. The Student Hub portal brings these services together in one easy-to-use platform.
-
-
-
-**3. Objective**
-
-
-
-The objective of the Student Hub is to:
-
-
-
-Provide a centralized student portal.
-
-Allow students to access academic information anytime.
-
-Improve communication between students and the institution.
-
-Make navigation simple and user-friendly.
-
-
-
-**4. Target Users**
-
-Students
-
-Faculty (for updating information)
-
-College Administration
-
-
-
-**5. Functional Requirements**
-
-Home Page
-
-Display portal introduction.
-
-Navigation to login and other pages.
-
-Login
-
-Student authentication.
-
-Secure login using username and password.
-
-Dashboard
-
-Quick access to all portal features.
-
-Student Profile
-
+Profile
 View personal information.
-
-Edit profile details.
-
-Study Material
-
-View and download study resources.
-
+Update profile details.
+Change password.
+Attendance
+View attendance subject-wise.
+Display attendance percentage.
+Materials
+Download study materials.
+View uploaded notes and documents.
 Results
-
-Display semester-wise marks and grades.
-
-Performance Statistics
-
-Show graphs or charts representing academic performance.
-
-About Student Hub
-
-Information about the portal and its purpose.
-
-Contact Us
-
-Display contact information.
-
-Allow users to submit queries.
-
+View semester-wise examination results.
+Display marks and grades.
+Notifications
+Display important notices and announcements.
+Show latest updates from the college.
+Calendar
+Display academic calendar.
+Show examination dates and event schedules.
+Events
+Display upcoming college events.
+Show event details and registration information.
 Feedback
-
-Submit suggestions and ratings.
-
-Thank You Page
-
-Confirmation after successful feedback submission.
-
-Logout
-
-Securely end the user session.
-
-
-
-**6. Non-Functional Requirements**
-
-Usability
-
-Simple and intuitive interface.
-
-Easy navigation.
-
+Allow students to submit feedback.
+Store feedback for administrator review.
+5. About
+Display information about the Student Hub Portal.
+Explain the purpose and objectives of the system.
+6. Contact
+Display college contact information.
+Provide a contact form for student queries.
+7. Logout
+End the current user session.
+Redirect the user to the Home page.
+Non-Functional Requirements
 Performance
-
-Fast loading pages.
-
-Responsive design.
-
+The website should load quickly.
+Dashboard pages should open within a few seconds.
 Security
-
-Secure authentication.
-
-Protection of student data.
-
+User authentication through secure login.
+Passwords should be protected.
+Only authorized users can access student data.
+Usability
+Simple and user-friendly interface.
+Easy navigation between pages.
+Responsive design for desktop and mobile devices.
 Reliability
-
-Accurate academic information.
-
-System available whenever required.
-
+The system should be available whenever students need it.
+Data should be stored safely.
 Maintainability
-
-Easy to update content and add new features.
-
-
-
-**7. User Flow**
-
-Home
-
-&#x20;  │
-
-&#x20;  ▼
-
-Login
-
-&#x20;  │
-
-&#x20;  ▼
-
-Dashboard
-
-&#x20;  ├── Student Profile
-
-&#x20;  ├── Study Material
-
-&#x20;  ├── Results
-
-&#x20;  ├── Performance Statistics
-
-&#x20;  ├── About Student Hub
-
-&#x20;  ├── Contact Us
-
-&#x20;  ├── Feedback
-
-&#x20;  │      │
-
-&#x20;  │      ▼
-
-&#x20;  │  Thank You Page
-
-&#x20;  │
-
-&#x20;  └── Logout
-
-
-
-**8. Inputs**
-
-Username
-
-Password
-
-Student details
-
-Feedback
-
-Contact form details
-
-
-
-**9. Outputs**
-
-Student dashboard
-
-Profile information
-
-Study materials
-
-Results
-
-Performance charts
-
-Feedback confirmation
-
-
-
-**10. Assumptions**
-
-Every student has valid login credentials.
-
-Academic information is updated by the college.
-
-Internet connectivity is available.
-
-
-
-**11. Constraints**
-
-Only registered users can log in.
-
-Students can view but cannot modify academic records.
-
-Only authorized staff can upload study materials and results.
-
+The system should be easy to update and maintain.
+New modules can be added in the future.
+Software Requirements
+Operating System: Windows 10/11
+Frontend: HTML, CSS, JavaScript
+Backend: PHP (or any server-side language)
+Database: MySQL
+Browser: Google Chrome, Microsoft Edge, Mozilla Firefox
+IDE: Visual Studio Code
+Hardware Requirements
+Processor: Intel Core i3 or above
+RAM: Minimum 4 GB
+Storage: 500 MB free space
+Internet Connection
+Keyboard and Mouse
+User Requirements
+Student
+Register and log in.
+View profile.
+Check attendance.
+Download study materials.
+View results.
+Read notifications.
+View academic calendar.
+Check upcoming events.
+Submit feedback.
+Log out securely.
