@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Hub - Attendance</title>
-    
-    <link rel="stylesheet" href=""C:\Users\Khushi Thakor\Desktop\vs code\WDF\style.css">
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&family=Homemade+Apple&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div style="width:90%; margin:auto; border:2px solid gray; padding:10px;">
-
-     <td width="50%" valign="top">
-        <a href="home.html">← Back</a>
-
+    <div class="container">
+<div class="attendance-card">
 
     <!-- Header -->
     <table width="100%">
@@ -22,11 +24,12 @@
             </td>
 
             <td>
-                <h1 style="margin:0;">Student Hub</h1>
+                <h1 class="page-logo">Student Hub</h1>
+                <!-- <h1 style="margin:0;">Student Hub</h1> -->
             </td>
 
         <td align="right" width="15%">
-            <a href="home.html"><button>LOGOUT</button></a>
+            <a href="logout.html"><button>LOGOUT</button></a>
         </td>
         </tr>
     </table>
@@ -75,35 +78,46 @@
             </td>
 
             <!-- Attendance Section -->
-            <td valign="top">
+             <td valign="top">
 
-                <div style="background-color:lightgray; padding:20px; height:250px;">
+    <div class="attendance-card">
 
-                    <h3>Attendance</h3>
+        <h2>Attendance</h2>
 
-                    <hr>
+        <div class="attendance-content">
 
-                    <!-- Attendance Circle -->
-                    <div style="
-                        width:100px;
-                        height:100px;
-                        border:15px solid brown;
-                        border-radius:50%;
-                        text-align:center;
-                        line-height:100px;
-                        font-size:25px;
-                        font-weight:bold;
-                        background:white;">
-                        75%
-                    </div>
+            <div class="attendance-circle">
+                <span>75%</span>
+            </div>
 
-                </div>
+            <div class="attendance-details">
 
-            </td>
+                <h3>Current Attendance</h3>
+
+                <p>
+                    Your attendance is <b>75%</b>.
+                </p>
+
+                <p>
+                    Minimum required attendance is <b>75%</b>.
+                </p>
+
+                <p>
+                    Keep attending classes regularly to maintain eligibility.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+  </td>
 
         </tr>
     </table>
 
+</div>
 </div>
 
 </body>

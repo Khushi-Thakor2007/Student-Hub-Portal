@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Results Table</title>
-    <link rel="stylesheet" href="C:\Users\Khushi Thakor\Desktop\vs code\WDF\style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Results</title>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div style="width:90%; margin:auto; border:2px solid gray; padding:10px;">
+    <div class="container">
 
      <td width="50%" valign="top">
-        <a href="home.html">← Back</a>
 
   <table width="100%">
         <tr>
@@ -23,7 +30,7 @@
             </td>
 
         <td align="right" width="15%">
-            <a href="home.html"><button>LOGOUT</button></a>
+            <a href="logout.html"><button>LOGOUT</button></a>
         </td>
         </tr>
     </table>
@@ -71,72 +78,54 @@
 
             <td width="80%" valign="top">
 
-                <table border="1" cellspacing="0" cellpadding="10" width="100%">
+              <div class="result-card">
 
-                    <tr bgcolor="lightgray">
-                        <th>RESULTS</th>
-                        <th>OPTION 1</th>
-                        <th>OPTION 2</th>
-                        <th>OPTION 3</th>
-                    </tr>
+    <h2>Semester Results</h2>
 
-                    <tr align="center">
-                        <td>Data Analysis 1</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+    <p class="result-subtitle">
+        View your subject-wise grades and result status.
+    </p>
 
-                    <tr align="center">
-                        <td>Data Analysis 2</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+    <table class="result-table">
 
-                    <tr align="center">
-                        <td>Data Analysis 3</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Credits</th>
+            <th>Status</th>
+        </tr>
 
-                    <tr align="center">
-                        <td>Data Analysis 4</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+        <tr>
+            <td>Web Development</td>
+            <td>A+</td>
+            <td>3</td>
+            <td class="status-pass">Pass</td>
+        </tr>
 
-                    <tr align="center">
-                        <td>Data Analysis 5</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+        <tr>
+            <td>Data Structures</td>
+            <td>A</td>
+            <td>4</td>
+            <td class="status-pass">Pass</td>
+        </tr>
 
-                    <tr align="center">
-                        <td>Data Analysis 6</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+        <tr>
+            <td>Computer Networks</td>
+            <td>--</td>
+            <td>4</td>
+            <td class="status-pending">Pending</td>
+        </tr>
 
-                    <tr align="center">
-                        <td>Data Analysis 7</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>A+</td>
+            <td>4</td>
+            <td class="status-pass">Pass</td>
+        </tr>
 
-                    <tr align="center">
-                        <td>Data Analysis 8</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+    </table>
 
-                </table>
+</div>
 
             </td>
 

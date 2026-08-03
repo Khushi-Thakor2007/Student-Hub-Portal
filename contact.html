@@ -2,27 +2,39 @@
 <html>
 <head>
     <title>Student Hub - Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div style="width:90%; margin:auto; border:2px solid gray; padding:10px;">
+<div class="container">
+<div class="contact-card">
+<!-- Header -->
+<table width="100%">
+    <tr>
 
-    <!-- Header -->
-    <table width="100%">
-        <tr>
-            <td width="10%">
-                <img src="logo.png" alt="Logo" width="100" height="70">
-            </td>
+        <td width="10%">
+            <img src="logo.png" alt="Logo" width="100" height="70">
+        </td>
 
-            <td>
-                <h1 style="margin:0;">Student Hub</h1>
-            </td>
-        </tr>
-    </table>
+        <td>
+            <h1 class="page-logo">Student Hub</h1>
+        </td>
 
-    <hr>
+        <td align="right" width="15%">
+            <a href="logout.html">
+                <button>LOGOUT</button>
+            </a>
+        </td>
+
+    </tr>
+</table>
+
+<hr>
 
     <!-- Navigation Bar -->
     <table width="100%">
@@ -40,62 +52,62 @@
     <hr>
 
     <!-- Welcome -->
-    <h3>Welcome!</h3>
+   <h2>Contact Us</h2>
 
-    <table width="100%">
-        <tr>
+<p class="contact-subtitle">
+We'd love to hear from you. Feel free to send us your questions or feedback.
+</p>
 
-            <!-- Left Side -->
-            <td width="35%" valign="top">
+    <div class="contact-content">
 
-                <button style="width:220px;">College Address</button>
+    <!-- Left Side -->
 
-                <br><br>
+    <div class="contact-info">
 
-                <button style="width:220px;">College Contact No.</button>
+        <div class="info-box">
+            <h3>📍 College Address</h3>
+            <p>
+                ABC Engineering College<br>
+                Ahmedabad, Gujarat
+            </p>
+        </div>
 
-                <br><br>
+        <div class="info-box">
+            <h3>📞 Contact Number</h3>
+            <p>+91 98765 43210</p>
+        </div>
 
-                <button style="width:220px;">College Email</button>
+        <div class="info-box">
+            <h3>📧 Email</h3>
+            <p>studenthub@gmail.com</p>
+        </div>
 
-            </td>
+    </div>
 
-            <!-- Vertical Line -->
-            <td width="5%">
-                <hr style="height:250px; width:1px;">
-            </td>
+    <!-- Right Side -->
 
-            <!-- Right Side -->
-            <td width="60%" valign="top">
+    <div class="contact-form">
 
-                <form>
+        <form>
 
-                    <input type="text" placeholder="Name" size="40">
+            <input type="text" placeholder="Your Name">
 
-                    <br><br>
+            <input type="email" placeholder="Your Email">
 
-                    <input type="email" placeholder="Email" size="40">
+            <input type="text" placeholder="Mobile Number">
 
-                    <br><br>
+            <textarea rows="6" placeholder="Write your message"></textarea>
 
-                    <input type="text" placeholder="Mobile No." size="40">
+            <button type="submit">Send Message</button>
 
-                    <br><br>
+        </form>
 
-                    <textarea placeholder="Message" rows="5" cols="42"></textarea>
-
-                    <br><br>
-
-                    <button type="submit">Submit</button>
-
-                </form>
-
-            </td>
-
-        </tr>
-    </table>
+    </div>
 
 </div>
+
+   </div>
+   </div>
 
 </body>
 </html>

@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Student Profile</title>
-    <link rel="stylesheet" href="C:\Users\Khushi Thakor\Desktop\vs code\WDF\style.css">
-</head>
+    <head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Results</title>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<div style="width:90%; margin:auto; border:2px solid gray; padding:10px;">
+<div class="container">
 
     <!-- Header -->
-    <table width="100%">
-        <tr>
-            <td width="10%">
-                <img src="logo.png" alt="Logo" width="100" height="70">
-            </td>
+   <div class="header">
 
-            <td>
-                <h1 style="margin:0;">Student Hub</h1>
-            </td>
-        </tr>
-    </table>
+<div class="logo-title">
+    <img src="logo.png" alt="Logo">
+    <h1>Student Hub</h1>
+</div>
 
-    <hr>
+<a href="logout.html" class="register-btn">
+    Logout
+</a>
+
+</div>
+<hr>
 
     <!-- Navigation Bar -->
-    <table width="100%">
-        <tr align="center">
-            <td><a href="home.html"><button>HOME</button></a></td>
-            <td><a href="contact.html"><button>CONTACT</button></a></td>
-            <td><a href="dashboard.html"><button>DASHBOARD</button></a></td>
-            <td><a href="Events.html"><button>EVENTS</button></a></td>
-            <td><a href="Notification.html"><button>Accademic Info</button></a></td> 
-            <td><a href="about.html"><button>ABOUT</button></a></td>
-            <td><a href="feedback.html"><button>FEEDBACK</button></a></td>
-        </tr>
-    </table>
+<div class="navbar">
+
+<a href="home.html">Home</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="Events.html">Events</a>
+
+<a href="Notification.html">Academic Info</a>
+
+<a href="about.html">About</a>
+
+<a href="feedback.html">Feedback</a>
+
+</div>
 
     <hr>
 
@@ -45,82 +58,73 @@
     </center>
 
     <!-- Profile Section -->
-    <table width="100%">
-        <tr>
+    <div class="profile-card">
 
-            <!-- Profile Image -->
-            <td width="25%" align="center" valign="top">
-                <div style="width:120px; height:120px; background-color:lightgray;
-                display:flex; justify-content:center; align-items:center;">
-                    <b>Profile Image</b>
-                </div>
-            </td>
+<h2>Student Profile</h2>
 
-            <!-- Student Details -->
-            <td>
-                <table border="1" cellpadding="8" width="100%">
-                    <tr>
-                        <td>Name</td>
-                        <td>Khushi Thakor</td>
-                    </tr>
+<div class="profile-content">
 
-                    <tr>
-                        <td>Student ID</td>
-                        <td>123456</td>
-                    </tr>
+<div class="profile-image">
+    Profile Image
+</div>
 
-                    <tr>
-                        <td>Department</td>
-                        <td>Computer Engineering</td>
-                    </tr>
+<table class="profile-table">
 
-                    <tr>
-                        <td>Semester</td>
-                        <td>3</td>
-                    </tr>
+<tr>
+<td>Name</td>
+<td>Khushi Thakor</td>
+</tr>
 
-                    <tr>
-                        <td>Mobile No.</td>
-                        <td>9876543210</td>
-                    </tr>
+<tr>
+<td>Student ID</td>
+<td>123456</td>
+</tr>
 
-                    <tr>
-                        <td>Email</td>
-                        <td>student@gmail.com</td>
-                    </tr>
+<tr>
+<td>Department</td>
+<td>Computer Engineering</td>
+</tr>
 
-                    <tr>
-                        <td>Address</td>
-                        <td>Ahmedabad</td>
-                    </tr>
+<tr>
+<td>Semester</td>
+<td>3</td>
+</tr>
 
-                    <tr>
-                        <td>Institute Name</td>
-                        <td>ABC College</td>
-                    </tr>
-                </table>
-            </td>
+<tr>
+<td>Mobile</td>
+<td>9876543210</td>
+</tr>
 
-        </tr>
-    </table>
+<tr>
+<td>Email</td>
+<td>student@gmail.com</td>
+</tr>
 
-    <br><br>
+<tr>
+<td>Address</td>
+<td>Ahmedabad</td>
+</tr>
 
-    <!-- Buttons -->
-   <!-- Buttons -->
-<br><br>
+<tr>
+<td>Institute</td>
+<td>ABC College</td>
+</tr>
 
-<center>
-    <button>Edit Profile</button>
+</table>
 
-    &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
 
-    <button>Change Password</button>
+<div class="profile-buttons">
 
-    &nbsp;&nbsp;&nbsp;&nbsp;
+<button>Edit Profile</button>
 
-    <button>Save Changes</button>
-</center>
+<button>Change Password</button>
+
+<button>Save Changes</button>
+
+</div>
+
+</div>
 
 </div>
 

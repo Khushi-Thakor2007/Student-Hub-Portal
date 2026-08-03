@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Hub - Material</title>
-    <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Study Materials</title>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -10,7 +18,7 @@
 <div style="width:90%; margin:auto; border:2px solid gray; padding:10px;">
 
      <td width="50%" valign="top">
-        <a href="home.html">← Back</a>
+        
 
 
     <!-- Header -->
@@ -25,7 +33,7 @@
             </td>
 
         <td align="right" width="15%">
-            <a href="home.html"><button>LOGOUT</button></a>
+            <a href="logout.html"><button>LOGOUT</button></a>
         </td>
         </tr>
     </table>
@@ -69,42 +77,48 @@
                 <hr style="height:300px; width:1px;">
             </td>
 
-            <!-- Material Section -->
-            <td valign="top">
+          <!-- Material Section -->
+<td valign="top">
 
-                <h3>Material</h3>
+<div class="material-card">
 
-                <hr>
+    <h2>Study Materials</h2>
 
-                <!-- Material 1 -->
-                <table border="1" cellpadding="10" width="80%">
-                    <tr>
-                        <td>
-                            <b>Practical_List_ITUE203_WD.pdf</b><br>
-                            PDF
-                        </td>
+    <p class="material-subtitle">
+        Download notes, practicals and syllabus.
+    </p>
 
-                        <td align="center">
-                            <img src="pdf.png" alt="PDF" width="60" height="60">
-                        </td>
-                    </tr>
-                </table>
+    <!-- Material 1 -->
+    <div class="material-box">
 
-                <br>
+        <img src="pdf.png" alt="PDF">
 
-                <!-- Material 2 -->
-                <table border="1" cellpadding="10" width="80%">
-                    <tr>
-                        <td>
-                            <b>ITUE203_WDF_Syllabus.pdf</b><br>
-                            PDF
-                        </td>
+        <div class="material-details">
+            <h3>Practical_List_ITUE203_WD.pdf</h3>
+            <p>Web Development Practical List</p>
+        </div>
 
-                        <td align="center">
-                            <img src="pdf.png" alt="PDF" width="60" height="60">
-                        </td>
-                    </tr>
-                </table>
+        <button>Download</button>
+
+    </div>
+
+    <!-- Material 2 -->
+    <div class="material-box">
+
+        <img src="pdf.png" alt="PDF">
+
+        <div class="material-details">
+            <h3>ITUE203_WDF_Syllabus.pdf</h3>
+            <p>Web Development Syllabus</p>
+        </div>
+
+        <button>Download</button>
+
+    </div>
+
+</div>
+
+</td>
 
             </td>
 

@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Hub - Notification</title>
-    <link rel="stylesheet" href="C:\Users\Khushi Thakor\Desktop\vs code\WDF\style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub - Notifications</title>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div style="width:90%; margin:auto; border:2px solid gray; padding:10px;">
+<div class="container">
 
      <td width="50%" valign="top">
-
-                <a href="home.html">← Back</a>
 
     <!-- Header -->
     <table width="100%">
@@ -21,11 +27,11 @@
             </td>
 
             <td>
-                <h1 style="margin:0;">Student Hub</h1>
+               <h1 class="page-logo">Student Hub</h1>
             </td>
 
         <td align="right" width="15%">
-            <a href="home.html"><button>LOGOUT</button></a>
+            <a href="logout.html"><button>LOGOUT</button></a>
         </td>
         </tr>
     </table>
@@ -33,7 +39,13 @@
     <hr>
 
     <!-- Page Title -->
-    <h2>Academic Info</h2>
+<div class="notification-card">
+
+        <h2>Academic Information</h2>
+
+        <p class="notification-subtitle">
+        Access your notifications, attendance, calendar and study materials.
+        </p>
 
     <!-- Main Content -->
     <table width="100%">
@@ -41,7 +53,7 @@
         <tr>
 
             <!-- Left Menu -->
-            <td width="20%" valign="top">
+          <td width="20%" valign="top" class="side-menu">
 
                 <a href="Notification.html"><button style="width:150px;">Notification</button> </a>
                 
@@ -62,7 +74,6 @@
                 <a href="Result.html"><button style="width:150px;">SGPA/CGPA</button></a>
 
                 <br><br>
-<!--         <button style="width:150px;">Setting</button> -->
 
             </td>
 
@@ -78,39 +89,65 @@
 
                 <hr>
 
-                <!-- Notification 1 -->
-                <table border="1" cellpadding="15" width="60%">
-                    <tr>
-                        <td>
-                            <b>Notification</b>
-                        </td>
+               <div class="notification-list">
 
-                        <td align="right">
-                            10m ago
-                        </td>
-                    </tr>
-                </table>
+    <!-- Notification 1 -->
+    <div class="notification-box">
 
-                <br><br>
+        <div class="notification-info">
 
-                <!-- Notification 2 -->
-                <table border="1" cellpadding="15" width="60%">
-                    <tr>
-                        <td>
-                            <b>Notification</b>
-                        </td>
+            <h4>📢 New Assignment Uploaded</h4>
 
-                        <td align="right">
-                            30m ago
-                        </td>
-                    </tr>
-                </table>
+            <p>
+                Web Development Assignment-3 has been uploaded.
+                Submit it before <b>28 July 2026</b>.
+            </p>
 
-            </td>
+        </div>
 
-        </tr>
+        <span class="notification-time">10 min ago</span>
 
-    </table>
+    </div>
+
+
+    <!-- Notification 2 -->
+    <div class="notification-box">
+
+        <div class="notification-info">
+
+            <h4>📝 Mid Semester Exam</h4>
+
+            <p>
+                Mid Semester Examination timetable has been published.
+                Check your exam schedule.
+            </p>
+
+        </div>
+
+        <span class="notification-time">30 min ago</span>
+
+    </div>
+
+
+    <!-- Notification 3 -->
+    <div class="notification-box">
+
+        <div class="notification-info">
+
+            <h4>🎉 Cultural Fest Registration</h4>
+
+            <p>
+                Registration for Cultural Fest is now open.
+                Last date: <b>5 August 2026</b>.
+            </p>
+
+        </div>
+
+        <span class="notification-time">1 hour ago</span>
+
+    </div>
+
+</div>
 
 </div>
 

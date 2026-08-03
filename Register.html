@@ -1,68 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
+ <head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Hub - Register</title>
-    <link rel="stylesheet" href="C:\Users\Khushi Thakor\Desktop\vs code\WDF\style.css">
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div style="width:90%; margin:auto; border:2px solid gray; padding:10px;">
+<div class="container">
 
     <!-- Header -->
-    <table width="100%">
-        <tr>
-            <td width="10%">
-                <img src="logo.png" alt="Logo" width="100" height="70">
-            </td>
+   <div class="header">
 
-            <td>
-                <h1 style="margin:0;">Student Hub</h1>
-            </td>
-        </tr>
-    </table>
+    <div class="logo-title">
+        <img src="logo.png" alt="Logo">
+        <h1>Student Hub</h1>
+    </div>
+
+    <a href="login.html" class="register-btn">
+        Login
+    </a>
+
+</div>
+
+<hr>
     <hr>
 
     <!-- Registration Form -->
-    <center>
+    <div class="register-card">
 
-        <h3>Create an Account</h3>
+<h2>Create an Account</h2>
 
-        <form>
+<form class="register-form">
 
-            <input type="text" placeholder="Full Name" size="40"><br><br>
+<input type="text" placeholder="Full Name">
 
-            <input type="text" placeholder="Student ID" size="40"><br><br>
+<input type="text" placeholder="Student ID">
 
-            <input type="email" placeholder="Email Address" size="40"><br><br>
+<input type="email" placeholder="Email Address">
 
-            <input type="text" placeholder="Mobile No." size="40"><br><br>
+<input type="text" placeholder="Mobile Number">
 
-            <input type="password" placeholder="Password" size="40"><br><br>
+<input type="password" placeholder="Password">
 
-            <input type="password" placeholder="Confirm Password" size="40"><br><br>
+<input type="password" placeholder="Confirm Password">
 
-            <input type="checkbox">
-            I agree to the Terms & Conditions
+<label class="terms">
 
-            &nbsp;&nbsp;&nbsp;
+<input type="checkbox">
 
-            <a href="login.html">Already have an account? Then Login</a>
-            
+I agree to the Terms & Conditions
 
-            <br><br>
+</label>
 
-            <button type="submit">Register</button>
+<button type="submit">
+Register
+</button>
 
-            <br><br>
+<p class="login-link">
+Already have an account?
+<a href="login.html">Login</a>
+</p>
 
-            <!-- <a href="login.html">Login</a> -->
+</form>
 
-        </form>
-
-    </center>
+</div>
 
 </div>
 
 </body>
 </html>
+  <!-- 12345689--> 

@@ -2,12 +2,17 @@
 <html>
 <head>
     <title>Student Hub - Dashboard</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div style="width:90%; margin:auto; border:2px solid gray; padding:10px;">
+<div class="container">
+<div class="dashboard-card">
 
     <!-- Header -->
     <table width="100%">
@@ -17,11 +22,11 @@
             </td>
 
             <td>
-                <h1 style="margin:0;">Student Hub</h1>
+               <h1 class="page-logo">Student Hub</h1>
             </td>
 
             <td align="right" width="15%">
-                <a href="home.html"><button>LOGOUT</button></a>
+                <a href="logout.html"><button>LOGOUT</button></a>
             </td>
         </tr>
     </table>
@@ -49,69 +54,52 @@
 
     <hr>
 
-    <!-- Welcome Message -->
-    <h3>Welcome, Username!</h3>
+<div class="dashboard-content">
 
-    <br>
+    <h2>Dashboard</h2>
 
-    <!-- First Row -->
-    <table width="100%">
-        <tr align="center">
+    <p class="dashboard-subtitle">
+        Welcome back! Here's a quick overview of your academic activities.
+    </p>
 
-            <td>
-                <div style="width:150px; height:120px; background-color:lightgray;">
-                    <br>
-                    <b>Upcoming Events</b>
-                </div>
-            </td>
+    <div class="dashboard-grid">
 
-            <td>
-                <div style="width:150px; height:120px; background-color:lightgray;">
-                    <br>
-                    <b>Notices</b>
-                </div>
-            </td>
+        <div class="dashboard-box">
+            <h3>📅 Upcoming Events</h3>
+            <p>View upcoming college events and important dates.</p>
+        </div>
 
-            <td>
-                <div style="width:150px; height:120px; background-color:lightgray;">
-                    <br>
-                    <b>Attendance</b>
-                </div>
-            </td>
+        <div class="dashboard-box">
+            <h3>📢 Notices</h3>
+            <p>Latest announcements from your college.</p>
+        </div>
 
-        </tr>
-    </table>
+        <div class="dashboard-box">
+            <h3>📈 Attendance</h3>
+            <p>Your current attendance is <b>75%</b>.</p>
+        </div>
 
-    <br><br>
+        <div class="dashboard-box">
+            <h3>📝 Assignments</h3>
+            <p>3 assignments are pending submission.</p>
+        </div>
 
-    <!-- Second Row -->
-    <table width="100%">
-        <tr align="center">
+        <div class="dashboard-box">
+            <h3>🕒 Recent Activities</h3>
+            <p>See your latest updates and activities.</p>
+        </div>
 
-            <td>
-                <div style="width:150px; height:120px; background-color:lightgray;">
-                    <br>
-                    <b>Assignments</b>
-                </div>
-            </td>
+        <div class="dashboard-box">
+            <h3>🔗 Quick Links</h3>
+            <p>Access study materials and useful resources.</p>
+        </div>
 
-            <td>
-                <div style="width:150px; height:120px; background-color:lightgray;">
-                    <br>
-                    <b>Recent Activities</b>
-                </div>
-            </td>
+    </div>
 
-            <td>
-                <div style="width:150px; height:120px; background-color:lightgray;">
-                    <br>
-                    <b>Quick Links</b>
-                </div>
-            </td>
+</div>
 
-        </tr>
-    </table>
-
+</div>
+</div>
 </div>
 
 </body>
