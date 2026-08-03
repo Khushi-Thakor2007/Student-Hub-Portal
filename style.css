@@ -668,3 +668,164 @@ text-align:center;
 }
 
 }
+
+.page-logo{
+    font-family: "Homemade Apple", cursive;
+    font-size: 45px;
+    color: #5B4EF1;
+    letter-spacing: 2px;
+}
+
+/* =====================================
+            ATTENDANCE PAGE
+===================================== */
+
+/* Attendance Card */
+
+.attendance-card{
+
+    background:#ffffff;
+    border-radius:20px;
+    padding:30px;
+    margin:20px;
+    box-shadow:0 10px 30px rgba(91,78,241,.15);
+
+    transition:all .35s ease;
+
+}
+
+.attendance-card:hover{
+
+    box-shadow:0 22px 45px rgba(91,78,241,.30);
+
+}
+
+/* Heading */
+
+.attendance-card h2{
+
+    color:#5B4EF1;
+    font-size:30px;
+    margin-bottom:25px;
+
+    transition:.35s ease;
+
+}
+
+.attendance-card:hover h2{
+
+    color:#3B82F6;
+
+    letter-spacing:1px;
+
+}
+
+/* Layout */
+
+.attendance-content{
+
+    display:flex;
+    align-items:center;
+    gap:50px;
+
+}
+
+/* Circle */
+
+.attendance-circle{
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    background:conic-gradient(
+        #c522a5 0% 75%,
+        #e5e7eb 75% 100%
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+
+    box-shadow:0 15px 35px rgba(91,78,241,.25);
+
+    transition:all .4s ease;
+
+    cursor:pointer;
+
+}
+
+.attendance-circle:hover{
+
+    transform:scale(1.08) rotate(6deg);
+
+    box-shadow:0 25px 50px rgba(197,34,165,.45);
+
+}
+
+/* White Center */
+
+.attendance-circle::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:135px;
+    height:135px;
+
+    background:white;
+
+    border-radius:50%;
+
+}
+
+/* Percentage */
+
+.attendance-circle span{
+
+    position:relative;
+    z-index:2;
+
+    font-size:38px;
+    font-weight:bold;
+    color:#5B4EF1;
+
+    transition:.35s ease;
+
+}
+
+.attendance-circle:hover span{
+
+    transform:scale(1.15);
+
+    color:#c522a5;
+
+}
+
+/* Details */
+.attendance-details h3{
+
+    color:#5B4EF1;
+    margin-bottom:15px;
+
+    transition:.35s;
+
+}
+
+.attendance-card:hover .attendance-details h3{
+
+    color:#3B82F6;
+
+}
+
+.attendance-details p{
+
+    font-size:17px;
+    color:#555;
+    line-height:1.8;
+
+}
