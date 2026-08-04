@@ -1,0 +1,51 @@
+WDF
+
+CSS-------------------------------------------------------------------
+
+* - Selects every element on webpage
+# - it is use to select html element with id attribute so the style will apply on particular line 
+. - it is use to select the html element with class attribute so that all elements of the class will get same style  
+margin - Removes all outside spacing.
+padding - Removes all inside spacing.
+font-family - use for 
+font used - poppins , Homemade Apple
+sans serif - clean fonts without any decoration 
+serif - fonts with little bit decoration
+width : 95% - takes 95% of the browser page 
+display:flex - it arranges the element  in row or column
+transition - use for good or we can say smooth animation effect(change the colour of buttons smoothly)
+hover - button moved upword when we click the button
+banner - this command allows text over the image
+input , textarea , select - change the colour or style while we click that perticular thing
+@media(max-width:700px) - make the website responsive 
+grid - arrange elements in rows and columns
+.calendar-table - make a box of calendar
+card - use to give a morden look to website
+transform:scale(1.08) - it enlarge the element when we touch or click the button or area
+box-shadow:0 10px 30px rgba(...) - give a shadow effect on the element
+colour which I use - purple , violet , blue , light purple , white , gray 
+---> with the help of @media(...) , the website will automatically changes the layout , so the website will look good in both screen 
+lable - it shows the textlabel for a form elements
+
+HTML-----------------------------------------------------------------
+
+<!DOCTYPE html> - Tells the browser this is an HTML5 document.
+<html> - root element of webpage
+<head> - store title , css link 
+<body> - store visible content 
+<title > - set title
+<link> - css link 
+<p> - for paragraph
+<h1> to <h6> - heading 
+<a> - for hyperlinks
+<img> - for putting image
+<div> - make a group of elements
+<table> - create table
+<tr> - for row
+<td> - for data cell
+<button> - create clickable button
+<select> - for drop down list
+<nav> - define navigation menu
+<br> - use to insert a single line break
+<hr> - use for horizontal line
+<center> - 
