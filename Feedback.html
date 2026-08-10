@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Hub - Feedback</title>
-    <link rel="stylesheet" href="style.css">
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div style="width:90%; margin:auto; border:2px solid gray; padding:10px;">
+<div class="container">
 
     <!-- Header -->
     <table width="100%">
@@ -17,7 +25,7 @@
             </td>
 
             <td>
-                <h1 style="margin:0;">Student Hub</h1>
+               <h1 class="page-logo">Student Hub</h1>
             </td>
             
              <td align="right" width="15%">
@@ -29,10 +37,13 @@
     <hr>
 
     <!-- Feedback Title -->
-    <center>
-        <h2>Feedback</h2>
-        <p>We value your feedback! Please share your experience.</p>
-    </center>
+  <div class="feedback-card">
+
+<h2>Feedback</h2>
+
+<p class="feedback-subtitle">
+We value your feedback! Please share your experience.
+</p>
 
     <!-- Feedback Form -->
     <form>
@@ -55,40 +66,49 @@
 
         </table>
 
-        <br>
+     </table>
 
-        <center>
+     <div class="rating">
 
-            <b>Rating :</b>
+    <b>Rating</b>
 
-            <br><br>
+    <div class="star-rating">
 
-            ★ ★ ★ ★ ★
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">★</label>
 
-        </center>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">★</label>
+
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">★</label>
+
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">★</label>
+
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">★</label>
+
+    </div>
+
+</div>
+
+<label>Feedback</label>
+
+<textarea rows="6"></textarea>
 
         <br><br>
 
-        Feedback <br><br>
+        <div class="feedback-buttons">
 
-        <textarea rows="6" cols="80"></textarea>
+<button type="submit">Submit</button>
 
-        <br><br>
+<button type="reset">Clear</button>
 
-        <center>
-    <td>
-         <a href="logout.html">
-        <button type="button">Submit</button>
-        </a>
-    </td>
-
-            &nbsp;&nbsp;&nbsp;&nbsp;
-
-            <button type="reset">Clear</button>
-
-        </center>
+</div>
 
     </form>
+    </div>
 
 </div>
 

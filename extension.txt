@@ -1,0 +1,8 @@
+extension :
+
+prettier
+es lint
+thunder client
+bracket pair colourizer tool
+css peek
+error lence
