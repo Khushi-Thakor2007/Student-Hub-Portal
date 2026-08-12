@@ -128,7 +128,7 @@ hr{
                 transform:scale(1.03);
 }
 /* ---------- OPTIONAL TEXT OVER IMAGE ---------- */
-.banner::before{
+/* .banner::before{
                 content:"WELCOME TO STUDENT HUB";
                 position:absolute;
                 top:40%;
@@ -139,8 +139,8 @@ hr{
                 font-weight:700;
                 text-shadow:0 5px 15px rgba(0,0,0,.5);  
                 z-index:2;
-}
-.banner::after{
+} */
+/* .banner::after{
             content:"One Platform For Every Student";
             position:absolute;
             top:53%;
@@ -150,7 +150,7 @@ hr{
             font-size:22px;
             font-weight:400;
             z-index:2;
-}
+} */
 /* === BUTTONS === */
 button,
 .register-btn,
@@ -485,7 +485,7 @@ text-align:center;
 
     margin-bottom:35px;
 
-}
+} 
 
 /* Layout */
 
@@ -495,8 +495,7 @@ text-align:center;
     align-items:flex-start;
     gap:40px;
     margin-top:30px;
-}
-
+} 
 /* Left Side */
 
 .contact-info{
@@ -551,9 +550,19 @@ text-align:center;
 
 }
 
+/* ---------- VERTICAL LINE ---------- */
+
+.contact-divider{
+
+    width:2px;
+
+    background:#ded8ff;
+
+}
+
 /* Right Side */
 
-.contact-form{
+ .contact-form{
 
     width:60%;
 
@@ -572,7 +581,7 @@ text-align:center;
 
    width:220%; 
 
-}
+} 
 
 /* Responsive */
 
@@ -597,7 +606,7 @@ text-align:center;
     margin-bottom:30px;
     font-size:17px;
 
-}
+} 
 
 /* =====================================
             ABOUT PAGE
@@ -1035,6 +1044,111 @@ text-align:center;
 
 }
 /* =====================================
+            PROFILE PAGE
+===================================== */
+
+.profile-card{
+
+    background:#ffffff;
+    border-radius:20px;
+    padding:35px;
+    margin:20px;
+    box-shadow:0 10px 30px rgba(91,78,241,.15);
+    transition:.35s;
+
+}
+
+.profile-card:hover{
+
+    box-shadow:0 22px 45px rgba(91,78,241,.30);
+
+}
+
+.profile-card h2{
+
+    color:#5B4EF1;
+    font-size:34px;
+    margin-bottom:25px;
+    text-align:center;
+
+}
+
+.profile-content{
+
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+
+}
+
+.profile-image{
+
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:#ece8ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:600;
+    color:#5B4EF1;
+    box-shadow:0 8px 20px rgba(91,78,241,.15);
+
+}
+
+.profile-table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+.profile-table td{
+
+    padding:15px;
+    border:1px solid #ece8ff;
+
+}
+
+.profile-table td:first-child{
+
+    background:#f8f7ff;
+    font-weight:600;
+    color:#5B4EF1;
+    width:35%;
+
+}
+
+.profile-buttons{
+
+    text-align:center;
+    margin-top:35px;
+
+}
+
+.profile-buttons button{
+
+    margin:10px;
+
+}
+
+@media(max-width:850px){
+
+.profile-content{
+
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.profile-image{
+
+    margin-bottom:20px;
+
+}
+
+}
+/* =====================================
             EVENTS PAGE
 ===================================== */
 
@@ -1292,6 +1406,7 @@ text-align:center;
     letter-spacing:2px;
     font-weight:400;
 }
+
 /* =====================================
             MATERIAL PAGE
 ===================================== */
@@ -1524,111 +1639,7 @@ text-align:center;
 
 }
 
-/* =====================================
-            PROFILE PAGE
-===================================== */
 
-.profile-card{
-
-    background:#ffffff;
-    border-radius:20px;
-    padding:35px;
-    margin:20px;
-    box-shadow:0 10px 30px rgba(91,78,241,.15);
-    transition:.35s;
-
-}
-
-.profile-card:hover{
-
-    box-shadow:0 22px 45px rgba(91,78,241,.30);
-
-}
-
-.profile-card h2{
-
-    color:#5B4EF1;
-    font-size:34px;
-    margin-bottom:25px;
-    text-align:center;
-
-}
-
-.profile-content{
-
-    display:flex;
-    gap:40px;
-    align-items:flex-start;
-
-}
-
-.profile-image{
-
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    background:#ece8ff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-weight:600;
-    color:#5B4EF1;
-    box-shadow:0 8px 20px rgba(91,78,241,.15);
-
-}
-
-.profile-table{
-
-    width:100%;
-    border-collapse:collapse;
-
-}
-
-.profile-table td{
-
-    padding:15px;
-    border:1px solid #ece8ff;
-
-}
-
-.profile-table td:first-child{
-
-    background:#f8f7ff;
-    font-weight:600;
-    color:#5B4EF1;
-    width:35%;
-
-}
-
-.profile-buttons{
-
-    text-align:center;
-    margin-top:35px;
-
-}
-
-.profile-buttons button{
-
-    margin:10px;
-
-}
-
-@media(max-width:850px){
-
-.profile-content{
-
-    flex-direction:column;
-    align-items:center;
-
-}
-
-.profile-image{
-
-    margin-bottom:20px;
-
-}
-
-}
 /* =====================================
             REGISTER PAGE
 ===================================== */

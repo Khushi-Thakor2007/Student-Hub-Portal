@@ -49,3 +49,18 @@ HTML-----------------------------------------------------------------
 <br> - use to insert a single line break
 <hr> - use for horizontal line
 <center> - 
+
+JS------------------------------------------
+Keywords
+var
+let
+const
+.queryselector - inbuild method - we can fetch element like button and also fetch div
+to print --console.log and document.write
+element.addeventlisttener(event name , function name) --predefine method --  we can bind an event in html element 
+classlist -- property of java -- we can remove or add the classes
+toggle -- inbuilt method
+.queryselectorAll - to fetch all element 
+on click -- 
+=== - check the datatype and value to 
+alert -- use for notification
