@@ -1,0 +1,25 @@
+Student Hub
+│
+├── Home
+│
+├── Authentication
+│   ├── Login
+│   ├── Register
+│   └── Logout
+│
+├── Dashboard
+│   ├── Attendance
+│   ├── Calendar
+│   ├── Result
+│   ├── Material
+│   ├── Events
+│   └── Notifications
+│
+├── Student Profile
+│   └── Profile
+│
+├── Information
+│   ├── About Us
+│   └── Contact Us
+│
+└── Feedback
