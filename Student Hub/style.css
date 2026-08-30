@@ -1,17 +1,19 @@
-/* === STUDENT HUB - HOME PAGE === */
+/* ==================================================================== */
+/* Home PAGE */
+/* ==================================================================== */
 /* ---------- RESET ---------- */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-body{
+/* body{
     background:linear-gradient(135deg,#f7f3ff,#eef5ff);
     font-family:'Poppins',sans-serif;
     color:#333;
-}
+} */
 /* ---------- CONTAINER ---------- */
-.container{
+/* .container{
             width:97%;
             max-width:1450px;
             margin:25px auto;
@@ -20,34 +22,39 @@ body{
             padding:20px 20px 15px 20px;
             border:2px solid #ded8ff;
             box-shadow:0 20px 50px rgba(88,72,190,.15);
-}
+} */
 /* ---------- HEADER ---------- */
-.header{
+.header
+{
         display:flex;
         justify-content:space-between;
         align-items:center;
         padding:10px 5px;
 }
 /* ---------- LOGO ---------- */
-.logo-title{
+.logo-title
+{
             display:flex;
             align-items:center;
             gap:20px;
 }
-.logo-title img{
+.logo-title img
+{
                 width:150px;
                 height:120px;
                 object-fit:contain;
 }
 /* ---------- TITLE ---------- */
-.logo-title h1{
+.logo-title h1
+{
                 font-family:"Homemade Apple",cursive;
                 font-size:45px;
                 color:#5B4EF1;
                 letter-spacing:2px;
 }
 /* ---------- REGISTER BUTTON ---------- */
-.register-btn{
+.register-btn
+{
                 text-decoration:none;
                 color:white;
                 font-size:18px;
@@ -57,26 +64,30 @@ body{
                 background:linear-gradient(135deg,#8B5CF6,#3B82F6);
                 transition:.4s;
 }
-.register-btn:hover{
+.register-btn:hover
+{
                     transform:translateY(-5px);
                     box-shadow:0 15px 35px rgba(92, 78, 241, 0.758);
 }
 /* ---------- LINE ---------- */
-hr{
+hr
+{
     border:none;
     height:2px;
     background:#e3ddff;
     margin:20px 0;
 }
 /* ---------- NAVBAR ---------- */
-.navbar{
+.navbar
+{
             display:flex;
             justify-content:center;
             gap:35px;
             flex-wrap:wrap;
             margin-bottom:30px;
 }
-.navbar a{
+.navbar a
+{
             text-decoration:none;
             color:white;    
             background:linear-gradient(135deg,#8B5CF6,#3B82F6);
@@ -88,17 +99,22 @@ hr{
             min-width:100px;     /* ↓ Smaller width */
             text-align:center;
 }
-
-.navbar a.active{
+.navbar a.active
+{
     background:#ffffff;
     color:#5B4EF1;
     border:2px solid #5B4EF1;
     box-shadow:0 0 15px rgba(91,78,241,.5);
 }
-
-/* ============================= */
-/* ACTIVE NAVIGATION BUTTON */
-/* ============================= */
+/*---- ACTIVE NAVIGATION BUTTON ----*/
+.navbar a.active:hover
+{
+    background:linear-gradient(135deg,#8B5CF6,#3B82F6);
+    color:#222;
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(131, 7, 255, 0.7);
+}
+/* 
 .navbar a.active:hover{
     background:linear-gradient(135deg,#8B5CF6,#3B82F6);
     color:#222;
@@ -107,25 +123,29 @@ hr{
 
     box-shadow:0 0 20px rgba(131, 7, 255, 0.7);
 } */
-.navbar a:hover{
+.navbar a:hover
+{
                 transform:translateY(-4px);
                 box-shadow:0 12px 25px rgba(59,130,246,.25);
-}
+} 
 /* ---------- BANNER ---------- */
-.banner{
+.banner
+{
         position:relative;
         overflow:hidden;
         border-radius:25px;
 }
-.banner img{
+.banner img
+{
             width:100%;
             height:385px;
             object-fit:cover;
             border-radius:25px;
             transition:.5s;
 }
-.banner img:hover{
-                transform:scale(1.03);
+.banner img:hover
+{
+            transform:scale(1.03);
 }
 /* ---------- OPTIONAL TEXT OVER IMAGE ---------- */
 /* .banner::before{
@@ -154,7 +174,8 @@ hr{
 /* === BUTTONS === */
 button,
 .register-btn,
-.navbar a{
+.navbar a
+{
             cursor:pointer;
             border:none;
             font-family:'Poppins',sans-serif;
@@ -171,7 +192,8 @@ button,
 /* Hover */
 button:hover,
 .register-btn:hover,
-.navbar a:hover{
+.navbar a:hover
+{
                 background:linear-gradient(135deg,#A855F7,#2563EB);
                 transform:translateY(-5px);
                 box-shadow:0 15px 35px rgba(92, 78, 241, 0.689);
@@ -179,14 +201,16 @@ button:hover,
 /* Click */
 button:active,
 .register-btn:active,
-.navbar a:active{
+.navbar a:active
+{
                 transform:translateY(0);
                 box-shadow:0 5px 12px rgba(92, 78, 241, 0.689);
 }
 /* ---------- FORMS ---------- */
 input,
 textarea,
-select{
+select
+{
          width:100%;
         padding:12px;
         border-radius:10px; 
@@ -197,7 +221,8 @@ select{
 }
 input:focus,
 textarea:focus,
-select:focus{
+select:focus
+{
     outline:none;
     border-color:#5B4EF1;
     box-shadow:0 0 10px rgba(91,78,241,.2);
@@ -298,25 +323,23 @@ font-size:15px;
 width:100%;
 
 text-align:center;
-
+}
 }
 
-}
-
-/* =====================================
-            DASHBOARD PAGE
-===================================== */
+/* ==================================================================== */
+/* DASHBOARD  PAGE */
+/* ==================================================================== */
 .dashboard-logo{
     width:150px;
     height:120px;
     object-fit:contain;
 }
-.page-logo{
+/* .page-logo{
     font-family:"Homemade Apple", cursive;
     font-size:45px;
     color:#5B4EF1;
     letter-spacing:2px;
-}
+} */
 .dashboard-card{
 
     background:#ffffff;
@@ -450,6 +473,7 @@ text-align:center;
     grid-template-columns:1fr;
 
 }
+}
 
 /* =====================================
             CONTACT PAGE
@@ -577,15 +601,9 @@ text-align:center;
     border-radius:10px;
 }
 
-.contact-form button{
-
-   width:220%; 
-
-} 
-
 /* Responsive */
 
-@media(max-width:900px){
+/* @media(max-width:900px){
 
 .contact-content{
 
@@ -606,7 +624,7 @@ text-align:center;
     margin-bottom:30px;
     font-size:17px;
 
-} 
+}  */
 
 /* =====================================
             ABOUT PAGE
@@ -771,168 +789,406 @@ text-align:center;
 
 }
 
-.page-logo{
+/* .page-logo{
     font-family: "Homemade Apple", cursive;
     font-size: 52px;
     color:#5B4EF1;
     letter-spacing:2px;
     font-weight:400;
     margin:0;
+} */
+
+/* ==================================================================== */
+/* ATTENDANCE PAGE */
+/* ==================================================================== */
+
+.attendance-page {
+    width: 100%;
 }
 
-/* =====================================
-            ATTENDANCE PAGE
-===================================== */
+/* ==============================
+   ACADEMIC INFORMATION TITLE
+============================== */
 
-/* Attendance Card */
-
-.attendance-card{
-
-    background:#ffffff;
-    border-radius:20px;
-    padding:30px;
-    margin:20px;
-    box-shadow:0 10px 30px rgba(91,78,241,.15);
-
-    transition:all .35s ease;
-
+.academic-title {
+    color: #5B4EF1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
 }
 
-.attendance-card:hover{
-
-    box-shadow:0 22px 45px rgba(91,78,241,.30);
-
+.academic-subtitle {
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    margin: 0 0 30px 0;
 }
 
-/* Heading */
 
-.attendance-card h2{
+/* ==============================
+   ACADEMIC MAIN LAYOUT
+============================== */
 
-    color:#5B4EF1;
-    font-size:30px;
-    margin-bottom:25px;
-
-    transition:.35s ease;
-
+.academic-layout {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.attendance-card:hover h2{
 
-    color:#3B82F6;
+/* ==============================
+   LEFT MENU
+============================== */
 
-    letter-spacing:1px;
-
+.academic-menu {
+    width: 180px;
+    vertical-align: top;
+    padding: 5px 20px 0 0;
 }
 
-/* Layout */
-
-.attendance-content{
-
-    display:flex;
-    align-items:center;
-    gap:50px;
-
+.academic-menu a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
 }
 
-/* Circle */
+.academic-menu button {
+    width: 160px !important;
+    height: 48px;
 
-.attendance-circle{
+    padding: 10px 15px;
 
-    width:180px;
-    height:180px;
+    border: none;
+    border-radius: 12px;
 
-    border-radius:50%;
+    background: linear-gradient(
+        135deg,
+        #8B5CF6,
+        #3B82F6
+    );
 
-    background:conic-gradient(
-        #c522a5 0% 75%,
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(91,78,241,.25);
+
+    transition: all .35s ease;
+}
+
+
+/* Menu Hover */
+
+.academic-menu button:hover {
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        135deg,
+        #A855F7,
+        #2563EB
+    );
+
+    box-shadow: 0 15px 30px rgba(91,78,241,.30);
+}
+
+
+/* Active Attendance Button */
+
+.academic-menu button.academic-active {
+    background: #ffffff;
+    color: #5B4EF1;
+
+    border: 2px solid #5B4EF1;
+
+    box-shadow: 0 0 15px rgba(91,78,241,.35);
+}
+
+
+/* ==============================
+   VERTICAL DIVIDER
+============================== */
+
+.academic-divider-cell {
+    width: 40px;
+    vertical-align: top;
+    padding: 0 20px;
+}
+
+.academic-divider {
+    width: 2px;
+    min-height: 350px;
+
+    background: #e3ddff;
+
+    border-radius: 10px;
+}
+
+
+/* ==============================
+   ATTENDANCE SECTION
+============================== */
+
+.attendance-section {
+    vertical-align: top;
+    padding-left: 15px;
+}
+
+
+/* ==============================
+   ATTENDANCE CARD
+============================== */
+
+.attendance-content-card {
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    margin: 0;
+
+    box-shadow: 0 10px 30px rgba(91,78,241,.15);
+
+    transition: .35s ease;
+}
+
+.attendance-content-card:hover {
+
+    box-shadow: 0 22px 45px rgba(91,78,241,.25);
+}
+
+
+/* Attendance Heading */
+
+.attendance-content-card h2 {
+
+    color: #5B4EF1;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 30px;
+
+    margin: 0 0 30px;
+
+    font-weight: 700;
+}
+
+
+/* ==============================
+   ATTENDANCE CONTENT
+============================== */
+
+.attendance-main {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 45px;
+}
+
+
+/* ==============================
+   ATTENDANCE CIRCLE
+============================== */
+
+.attendance-circle {
+
+    width: 180px;
+    height: 180px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: conic-gradient(
+        #5B4EF1 0% 75%,
         #e5e7eb 75% 100%
     );
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
 
-    position:relative;
+    justify-content: center;
+    align-items: center;
 
-    box-shadow:0 15px 35px rgba(91,78,241,.25);
+    position: relative;
 
-    transition:all .4s ease;
+    box-shadow:
+        0 15px 35px rgba(91,78,241,.25);
 
-    cursor:pointer;
-
+    transition: .4s ease;
 }
 
-.attendance-circle:hover{
 
-    transform:scale(1.08) rotate(6deg);
+/* Circle Hover */
 
-    box-shadow:0 25px 50px rgba(197,34,165,.45);
+.attendance-circle:hover {
 
+    transform: scale(1.06) rotate(4deg);
+
+    box-shadow:
+        0 25px 50px rgba(91,78,241,.35);
 }
+
 
 /* White Center */
 
-.attendance-circle::before{
+.attendance-circle::before {
 
-    content:"";
+    content: "";
 
-    position:absolute;
+    position: absolute;
 
-    width:135px;
-    height:135px;
+    width: 135px;
+    height: 135px;
 
-    background:white;
+    background: white;
 
-    border-radius:50%;
-
+    border-radius: 50%;
 }
+
 
 /* Percentage */
 
-.attendance-circle span{
+.attendance-circle span {
 
-    position:relative;
-    z-index:2;
+    position: relative;
 
-    font-size:38px;
-    font-weight:bold;
-    color:#5B4EF1;
+    z-index: 2;
 
-    transition:.35s ease;
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    color: #5B4EF1;
+}
+
+
+/* ==============================
+   ATTENDANCE DETAILS
+============================== */
+
+.attendance-details {
+
+    flex: 1;
+}
+
+.attendance-details h3 {
+
+    color: #5B4EF1;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 22px;
+
+    margin: 0 0 15px;
 
 }
 
-.attendance-circle:hover span{
+.attendance-details p {
 
-    transform:scale(1.15);
+    color: #555;
 
-    color:#c522a5;
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin: 8px 0;
+}
+
+.attendance-details b {
+
+    color: #333;
 
 }
 
-/* Details */
-.attendance-details h3{
 
-    color:#5B4EF1;
-    margin-bottom:15px;
+/* /* ==============================
+   RESPONSIVE
+============================== */
 
-    transition:.35s;
+/* @media (max-width: 850px) {
 
-}
+    .academic-menu {
+        width: 150px;
+    }
 
-.attendance-card:hover .attendance-details h3{
+    .academic-menu button {
+        width: 140px !important;
+    }
 
-    color:#3B82F6;
+    .attendance-main {
+        gap: 25px;
+    }
 
-}
+    .attendance-circle {
+        width: 150px;
+        height: 150px;
+    }
 
-.attendance-details p{
+    .attendance-circle::before {
+        width: 112px;
+        height: 112px;
+    }
 
-    font-size:17px;
-    color:#555;
-    line-height:1.8;
+    .attendance-circle span {
+        font-size: 32px;
+    }
 
-}
+} 
+
+@media (max-width: 650px) {
+
+    .academic-layout,
+    .academic-layout tbody,
+    .academic-layout tr,
+    .academic-layout td {
+        display: block;
+        width: 100%;
+    }
+
+    .academic-menu {
+        text-align: center;
+        padding: 0;
+    }
+
+    .academic-menu button {
+        width: 100% !important;
+    }
+
+    .academic-divider-cell {
+        padding: 20px 0;
+    }
+
+    .academic-divider {
+        width: 100%;
+        height: 2px;
+        min-height: 0;
+    }
+
+    .attendance-section {
+        padding: 0;
+    }
+
+    .attendance-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .attendance-details {
+        width: 100%;
+    }
+
+} */
 
 /* =====================================
             CALENDAR PAGE
@@ -1041,11 +1297,9 @@ text-align:center;
     background:#faf9ff;
 
 }
-
-}
-/* =====================================
-            PROFILE PAGE
-===================================== */
+/* ==================================================================== */
+/* PROFILE PAGE */
+/* ==================================================================== */
 
 .profile-card{
 
@@ -1148,9 +1402,9 @@ text-align:center;
 }
 
 }
-/* =====================================
-            EVENTS PAGE
-===================================== */
+/* ==================================================================== */
+/* EVENT PAGE */
+/* ==================================================================== */
 
 .events-card{
 
@@ -1175,17 +1429,17 @@ text-align:center;
 }
 
 /* Heading */
-
 .events-card h2{
 
-    color:#5B4EF1;
+    color:#172B4D;
 
     font-size:34px;
 
     margin-bottom:10px;
 
-}
+    font-weight:700;
 
+}
 .events-subtitle{
 
     color:#666;
@@ -1297,119 +1551,655 @@ text-align:center;
         height:220px;
 
     }
+}
+/* ==================================================================== */
+/* NOTIFICATION OR ACADEMIC INFO PAGE */
+/* ==================================================================== */
 
+.notification-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(91, 78, 241, 0.15);
+    transition: 0.35s ease;
+}
+
+.notification-card:hover {
+    box-shadow: 0 22px 45px rgba(91, 78, 241, 0.25);
+}
+
+/* Page Heading */
+
+/* Page Heading */
+.notification-card h2 {
+    color: #5B4EF1;
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.notification-subtitle {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
 
 /* =====================================
-        NOTIFICATION PAGE
+   ACADEMIC INFO LAYOUT
 ===================================== */
 
-.notification-card{
-
-    background:#ffffff;
-    border-radius:20px;
-    padding:35px;
-    margin:20px;
-    box-shadow:0 10px 30px rgba(91,78,241,.15);
-    transition:.35s ease;
-
+.side-menu {
+    width: 180px;
+    padding: 10px 20px 10px 0;
+    vertical-align: top;
 }
 
-.notification-card:hover{
-
-    box-shadow:0 22px 45px rgba(91,78,241,.30);
-
+.side-menu button {
+    width: 160px;
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    font-size: 14px;
 }
 
-/* Heading */
+/* Remove the inline HR styling from HTML */
 
-.notification-card h2{
-
-    color:#5B4EF1;
-    font-size:34px;
-    margin-bottom:10px;
-
+.academic-divider {
+    width: 2px;
+    height: 100%;
+    min-height: 350px;
+    background: #e3ddff;
+    border: none;
+    margin: 0 20px;
 }
 
-.notification-subtitle{
+/* =====================================
+   NOTIFICATION LIST
+===================================== */
 
-    color:#666;
-    font-size:17px;
-    margin-bottom:35px;
-
-}
-
-/* Sidebar */
-
-.side-menu button{
-
-    width:180px;
-    margin-bottom:15px;
-
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 /* Notification Box */
 
-.notice-box{
-
-    background:#f8f7ff;
-    padding:20px;
-    border-radius:15px;
-    margin-bottom:20px;
-    box-shadow:0 8px 20px rgba(91,78,241,.12);
-    transition:.35s;
-
+.notification-box {
+    background: #f8f7ff;
+    padding: 20px 25px;
+    border-radius: 16px;
+    border-left: 5px solid #5B4EF1;
+    box-shadow: 0 8px 20px rgba(91, 78, 241, 0.12);
+    transition: 0.35s ease;
 }
 
-.notice-box:hover{
+/* Hover */
 
-    transform:translateY(-5px);
-    box-shadow:0 18px 35px rgba(91,78,241,.22);
-
+.notification-box:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(135deg, #8B5CF6, #3B82F6);
+    box-shadow: 0 18px 35px rgba(91, 78, 241, 0.25);
 }
 
-.notice-header{
+/* Notification Heading */
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:12px;
-
+.notification-info h4 {
+    color: #5B4EF1;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
-.notice-title{
-
-    color:#5B4EF1;
-    font-size:20px;
-    font-weight:600;
-
+.notification-box:hover .notification-info h4 {
+    color: white;
 }
 
-.notice-time{
+/* Notification Description */
 
-    color:#888;
-    font-size:14px;
-
+.notification-info p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
 }
 
-.notice-content{
-
-    color:#555;
-    line-height:1.7;
-
-}
-.page-logo{
-    margin:0;
-    font-family: "Homemade Apple", cursive;
-    font-size:52px;
-    color:#5B4EF1;
-    letter-spacing:2px;
-    font-weight:400;
+.notification-box:hover .notification-info p {
+    color: white;
 }
 
+/* Notification Time */
+
+.notification-time {
+    display: block;
+    color: #888;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.notification-box:hover .notification-time {
+    color: #eeeeee;
+}
+
+/* Bold Dates */
+
+.notification-info b {
+    color: #333;
+}
+
+.notification-box:hover .notification-info b {
+    color: white;
+}
 /* =====================================
-            MATERIAL PAGE
+   RESPONSIVE
 ===================================== */
+
+@media (max-width: 850px) {
+
+    .notification-card {
+        padding: 20px;
+    }
+
+    .side-menu {
+        width: 150px;
+    }
+
+    .side-menu button {
+        width: 140px;
+    }
+
+    .notification-info h4 {
+        font-size: 18px;
+    }
+
+    .notification-info p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .notification-card {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .side-menu {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .side-menu button {
+        width: 100%;
+    }
+
+    .notification-box {
+        padding: 16px;
+    }
+
+    .notification-info h4 {
+        font-size: 17px;
+    }
+
+    .notification-info p {
+        font-size: 14px;
+    }
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+   ============================== */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 96%;
+        padding: 20px;
+    }
+
+    .page-logo {
+        font-size: 42px;
+    }
+
+    .container > table:nth-of-type(2) td:first-child button {
+        width: 150px !important;
+        font-size: 17px;
+    }
+
+    .calendar-card {
+        padding-left: 20px;
+    }
+
+    .calendar-card > h2 {
+        font-size: 26px;
+    }
+}
+
+/* ==============================
+   BODY
+============================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #faf9ff;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
+/* ==============================
+   OUTER CONTAINER
+============================== */
+
+.container {
+    width: 96%;
+    min-height: 96vh;
+    max-width:1450px;
+    margin: 10px auto;
+    padding: 45px 50px;
+    box-sizing: border-box;
+    background: white;
+
+    border: 2px solid #ddd5ff;
+    border-radius: 30px;
+
+    box-shadow: 0 10px 35px rgba(90, 70, 220, 0.12);
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+.container > .attendance-card {
+    width: 100%;
+}
+
+/* Logo */
+.container img {
+    object-fit: contain;
+}
+
+/* Student Hub text */
+.page-logo {
+    margin: 0;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 48px;
+    font-weight: normal;
+
+    color: #5848e8;
+
+    line-height: 1.2;
+}
+
+
+/* ==============================
+   LOGOUT BUTTON
+============================== */
+
+.container > .attendance-card table button {
+    border: none;
+    border-radius: 15px;
+
+    padding: 15px 30px;
+
+    background: linear-gradient(
+        135deg,
+        #7b55ee,
+        #3d7ff0
+    );
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(83, 76, 220, 0.20);
+
+    transition: 0.2s ease;
+}
+
+.container > .attendance-card table button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 14px 30px rgba(83, 76, 220, 0.28);
+}
+
+
+/* ==============================
+   HEADER HORIZONTAL LINE
+============================== */
+
+.container > .attendance-card > hr {
+    border: none;
+
+    border-top: 3px solid #e3dcff;
+
+    margin: 20px 0 30px;
+}
+
+
+/* ==============================
+   ACADEMIC INFO TITLE
+============================== */
+
+.container > .attendance-card > h2 {
+    margin: 0 0 35px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+
+    color: #5b4bea;
+}
+
+
+/* ==============================
+   MAIN TABLE
+============================== */
+
+.container > .attendance-card > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* ==============================
+   LEFT MENU
+============================== */
+
+.container > .attendance-card > table > tbody > tr > td:first-child {
+    width: 22%;
+    vertical-align: top;
+
+    padding-right: 30px;
+}
+
+
+/* Menu buttons */
+
+.container > .attendance-card > table > tbody > tr > td:first-child button {
+    width: 180px !important;
+    height: 54px;
+
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #7b55ee,
+        #3d7ff0
+    );
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(83, 76, 220, 0.18);
+
+    transition: 0.2s ease;
+}
+
+
+/* Menu hover */
+
+.container > .attendance-card > table > tbody > tr > td:first-child button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 14px 28px rgba(83, 76, 220, 0.25);
+}
+/* ==============================
+   MENU BUTTON SPACING
+============================== */
+
+.container > .attendance-card > table > tbody > tr > td:first-child a {
+    display: inline-block;
+
+    margin-bottom: 0;
+}
+/* ==============================
+   VERTICAL LINE
+============================== */
+
+.container > .attendance-card > table > tbody > tr > td:nth-child(2) {
+    width: 6%;
+
+    padding: 0;
+
+    vertical-align: top;
+}
+
+
+/* Replace the <hr> inside second column */
+
+.container > .attendance-card > table > tbody > tr > td:nth-child(2) hr {
+    height: 360px !important;
+
+    width: 1px !important;
+
+    margin: 0 auto;
+
+    border: none;
+
+    border-left: 2px solid #e2dcff;
+}
+
+
+/* ==============================
+   ATTENDANCE AREA
+============================== */
+
+.container > .attendance-card > table > tbody > tr > td:nth-child(3) {
+    vertical-align: top;
+
+    padding-left: 25px;
+}
+
+
+/* ==============================
+   INNER ATTENDANCE CARD
+============================== */
+
+.container .attendance-card .attendance-card {
+    width: 95%;
+
+    min-height: 370px;
+
+    box-sizing: border-box;
+
+    padding: 38px;
+
+    margin: 0;
+
+    background: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(91, 75, 235, 0.10);
+}
+
+
+/* ==============================
+   ATTENDANCE TITLE
+============================== */
+
+.container .attendance-card .attendance-card h2 {
+    margin: 0 0 30px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    color: #5b4bea;
+}
+
+
+/* ==============================
+   ATTENDANCE CONTENT
+============================== */
+
+.attendance-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 55px;
+}
+
+
+/* ==============================
+   ATTENDANCE CIRCLE
+============================== */
+
+.attendance-circle {
+    width: 215px;
+    height: 215px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: conic-gradient(
+        #cf1ba7 0deg 270deg,
+        #e1e2e7 270deg 360deg
+    );
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    box-shadow: 0 15px 30px rgba(91, 75, 235, 0.15);
+}
+
+
+/* White center */
+
+.attendance-circle::before {
+    content: "";
+
+    position: absolute;
+
+    width: 161px;
+    height: 161px;
+
+    background: white;
+
+    border-radius: 50%;
+}
+
+
+/* 75% text */
+
+.attendance-circle span {
+    position: relative;
+
+    z-index: 2;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 46px;
+    font-weight: 700;
+
+    color: #5b4bea;
+}
+
+
+/* ==============================
+   ATTENDANCE DETAILS
+============================== */
+
+.attendance-details {
+    flex: 1;
+}
+
+
+/* Current Attendance */
+
+.attendance-details h3 {
+    margin: 0 0 20px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #5b4bea;
+}
+
+
+/* Paragraphs */
+
+.attendance-details p {
+    margin: 8px 0;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 20px;
+
+    line-height: 1.45;
+
+    color: #333;
+}
+
+
+/* Bold percentage */
+
+.attendance-details b {
+    font-weight: 700;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 1000px) {
+
+    .container {
+        width: 94%;
+        padding: 30px;
+    }
+
+    .page-logo {
+        font-size: 40px;
+    }
+
+    .attendance-content {
+        gap: 30px;
+    }
+
+    .attendance-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .attendance-circle::before {
+        width: 135px;
+        height: 135px;
+    }
+
+    .attendance-circle span {
+        font-size: 38px;
+    }
+
+    .attendance-details p {
+        font-size: 17px;
+    }
+}
+/* ==================================================================== */
+/* MATERIAL PAGE */
+/* ==================================================================== */
 
 .material-card{
 
@@ -1526,9 +2316,9 @@ text-align:center;
 
 }
 
-/* =====================================
-            RESULT PAGE
-===================================== */
+/* ==================================================================== */
+/* RESULT  PAGE */
+/* ==================================================================== */
 
 .result-card{
 
@@ -1640,9 +2430,9 @@ text-align:center;
 }
 
 
-/* =====================================
-            REGISTER PAGE
-===================================== */
+/* ==================================================================== */
+/* REGISTER  PAGE */
+/* ==================================================================== */
 
 .register-card{
 
@@ -1745,9 +2535,142 @@ text-align:center;
     text-decoration:underline;
 
 }
+/* ==================================================================== */
+/* ABOUT PAGE */
+/* ==================================================================== */
+
+/* About Section */
+.about-section {
+    margin-top: 10px;
+    padding: 10px 0 20px;
+}
+
+/* About Cards */
+.about-card,
+.info-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(91, 78, 241, 0.12);
+    transition: all 0.35s ease;
+    border: 1px solid #eeeaff;
+}
+
+/* Card Hover */
+.about-card:hover,
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(91, 78, 241, 0.22);
+}
+
+/* Card Headings */
+.about-card h3,
+.info-card h3 {
+    color: #5B4EF1;
+    font-size: 24px;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+/* Card Paragraphs */
+.about-card p,
+.info-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Mission & Vision */
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+/* Features List */
+.about-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 25px;
+}
+
+/* Feature Items */
+.about-card li {
+    background: #f8f7ff;
+    padding: 12px 15px;
+    border-radius: 12px;
+    color: #444;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(91, 78, 241, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* Feature Hover */
+.about-card li:hover {
+    background: linear-gradient(135deg, #8B5CF6, #3B82F6);
+    color: white;
+    transform: translateX(5px);
+    box-shadow: 0 10px 25px rgba(91, 78, 241, 0.20);
+}
+
 /* =====================================
-            THANK YOU PAGE
+   ABOUT PAGE RESPONSIVE DESIGN
 ===================================== */
+
+@media (max-width: 800px) {
+
+    .mission-vision {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-card,
+    .info-card {
+        padding: 22px;
+    }
+
+    .about-card ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .about-section {
+        padding: 5px 0 15px;
+    }
+
+    .about-card,
+    .info-card {
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .about-card h3,
+    .info-card h3 {
+        font-size: 20px;
+    }
+
+    .about-card p,
+    .info-card p {
+        font-size: 14px;
+    }
+
+    .about-card li {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
+/* ==================================================================== */
+/* THANK YOU PAGE */
+/* ==================================================================== */
 
 .thankyou-card{
 
@@ -1802,9 +2725,9 @@ text-align:center;
     display:inline-block;
 
 }
-/* =====================================
-            FEEDBACK PAGE
-===================================== */
+/* ==================================================================== */
+/* FEEDBACK  PAGE */
+/* ==================================================================== */
 
 .feedback-card{
 
@@ -1919,9 +2842,7 @@ text-align:center;
     min-width:140px;
 
 }
-/* ==========================
-      STAR RATING
-========================== */
+/*-----STAR RATING----*/
 
 .rating{
 
@@ -1991,4 +2912,530 @@ text-align:center;
 
     color:#FFD700;
 
+}
+/*============================================
+                login page 
+==============================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 35px;
+}
+
+.login-container {
+    position: relative;
+    width: 1100px;
+    height: 680px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 28px;
+    background: #ffffff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.left-side {
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+.overlay 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:rgba(35,25,70,0.35);
+
+}
+
+.welcome-text {
+    position: absolute;
+    top: 42px;
+    left: 45px;
+    z-index: 2;
+}
+
+.welcome-text h2 {
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: 600;
+    color: white;
+}
+
+.brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    white-space: nowrap;
+}
+
+.brand-icon {
+    width: 58px;
+    height: 58px;
+    background: white;
+    color: #111;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    transform: rotate(45deg);
+}
+
+.brand h1 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.welcome-description {
+    position: absolute;
+    z-index: 2;
+    top: calc(50% + 75px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.right-side {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: #222222;
+    
+}
+
+.blur-background {
+    position: absolute;
+    inset: -30px;
+    background-image: url("loginimage.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(18px);
+    transform: scale(1.1);
+    opacity:1;
+    z-index:0;
+}
+
+.right-side::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.68);
+    z-index: 1;
+}
+
+.login-content {
+    position: relative;
+    z-index: 2;
+    width: 76%;
+    max-width: 430px;
+}
+
+.login-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #5b4df5;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 28px;
+}
+
+.google-button {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c9c2ff;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.75);
+    color: #222222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(91, 77, 245, 0.12);
+}
+
+.google-button:hover {
+    background:#f5f2ff;
+}
+
+.google-icon {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4285F4;
+}
+.email-button {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c9c2ff;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.75);
+    color: #222222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(91, 77, 245, 0.12);
+    margin-top: 8px;
+}
+
+.email-button:hover {
+    background: #f5f2ff;
+}
+form label {
+    display: block;
+    font-size: 13px;
+    color: #222222;
+    margin-bottom: 8px;
+}
+
+form input[type="email"],
+form input[type="password"] 
+{
+    width: 100%;
+    height: 52px;
+    border: 1px solid #cfc9ff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    color:#222222;
+    padding: 0 14px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus 
+{
+    border-color:#6754f5;
+    box-shadow: 0 0 8px rgba(103,84,245,0.18);
+}
+
+form input::placeholder {
+    color: #999999;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -4px;
+    margin-bottom: 25px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 11px;
+    color: #555555;
+}
+
+.remember input {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+}
+
+.options a {
+    color: #5b4df5;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.options a:hover 
+{
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+     box-shadow: 0 8px 20px rgba(91, 77, 245, 0.22);
+}
+
+.login-button:hover {
+    background: linear-gradient(90deg, #7c4ff3, #2563eb);
+    transform: translateY(-1px);
+}
+
+.register 
+{
+    text-align: center;
+    margin-top: 24px;
+    font-size: 11px;
+    color: #666666;
+}
+.register a 
+{
+    color:#5b4df5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register a:hover 
+{
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .login-container {
+        width: 100%;
+        max-width: 750px;
+        height: auto;
+        min-height: 650px;
+    }
+
+    .brand h1 {
+        font-size: 30px;
+    }
+
+    .brand-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 26px;
+    }
+
+    .welcome-description {
+        font-size: 14px;
+    }
+
+    .login-content {
+        width: 82%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .login-container {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .left-side {
+        height: 400px;
+    }
+
+    .right-side {
+        min-height: 600px;
+    }
+
+    .welcome-text {
+        top: 30px;
+        left: 30px;
+    }
+
+    .welcome-text h2 {
+        font-size: 20px;
+    }
+
+    .brand {
+        top: 48%;
+    }
+
+    .brand h1 {
+        font-size: 28px;
+    }
+
+    .welcome-description {
+        top: 65%;
+        font-size: 13px;
+    }
+
+    .login-content {
+        width: 82%;
+        padding: 40px 0;
+    }
+}
+/*================== light dark mode ========================*/
+.theme-toggle{
+position:fixed;
+top:20px;
+right:25px;
+width:55px;
+height:45px;
+border:none;
+border-radius:30%;
+background:#ffffff;
+color:#222222;
+font-size:20px;
+cursor:pointer;
+z-index:9999;
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+margin: 0;
+line-height: 1;
+transition:0.3s;
+}
+
+.theme-toggle:hover{
+transform:scale(1.08);
+}
+
+body.dark-theme{
+background:#121212;
+}
+
+body.dark-theme .login-container{
+background:#1e1e1e;
+box-shadow:0 15px 50px rgba(0,0,0,0.5);
+}
+
+body.dark-theme .right-side{
+background:#1e1e1e;
+color:#ffffff;
+}
+
+body.dark-theme .right-side::after{
+background:rgba(20,20,20,0.78);
+}
+
+body.dark-theme .login-title{
+color:#9b8cff;
+}
+
+body.dark-theme .subtitle{
+color:#cccccc;
+}
+
+body.dark-theme form label{
+color:#eeeeee;
+}
+
+body.dark-theme form input[type="email"],
+body.dark-theme form input[type="password"]{
+background:rgba(40,40,40,0.85);
+border-color:#555555;
+color:#ffffff;
+}
+
+body.dark-theme form input::placeholder{
+color:#999999;
+}
+
+body.dark-theme .google-button,
+body.dark-theme .email-button{
+background:rgba(40,40,40,0.85);
+border-color:#555555;
+color:#ffffff;
+}
+
+body.dark-theme .google-button:hover,
+body.dark-theme .email-button:hover{
+background:#333333;
+}
+
+body.dark-theme .remember{
+color:#cccccc;
+}
+
+body.dark-theme .register{
+color:#aaaaaa;
+}
+
+body.dark-theme .theme-toggle{
+background:#292929;
+color:#ffffff;
+}
+
+body.dark-theme .container{
+background:#1e1e1e;
+color:#ffffff;
+}
+
+body.dark-theme .register-card{
+background:#1e1e1e;
+color:#ffffff;
+}
+
+body.dark-theme .register-card h2{
+color:#ffffff;
+}
+
+body.dark-theme .register-form input{
+background:#292929;
+color:#ffffff;
+border-color:#555555;
+}
+
+body.dark-theme .register-form input::placeholder{
+color:#999999;
+}
+
+body.dark-theme .terms{
+color:#cccccc;
+}
+
+body.dark-theme .login-link{
+color:#aaaaaa;
 }

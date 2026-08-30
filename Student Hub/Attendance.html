@@ -1,124 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&family=Homemade+Apple&display=swap" rel="stylesheet">
+    <title>Student Hub - Attendance</title>
 
-<!-- External CSS -->
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&family=Homemade+Apple&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+<button id="themeToggle" class="theme-toggle">🌙</button>
+<div class="container">
 
-    <div class="container">
-<div class="attendance-card">
-
-    <!-- Header -->
+    <!-- HEADER -->
     <table width="100%">
         <tr>
+
             <td width="10%">
                 <img src="logo.png" alt="Logo" width="100" height="70">
             </td>
 
             <td>
                 <h1 class="page-logo">Student Hub</h1>
-                <!-- <h1 style="margin:0;">Student Hub</h1> -->
             </td>
 
-        <td align="right" width="15%">
-            <a href="logout.html"><button>LOGOUT</button></a>
-        </td>
+            <td align="right" width="15%">
+                <a href="logout.html">
+                    <button>LOGOUT</button>
+                </a>
+            </td>
+
         </tr>
     </table>
 
     <hr>
 
-    <!-- Page Title -->
-    <h2>Academic Info</h2>
+    <!-- PAGE TITLE -->
+    <div class="attendance-page">
 
-    <table width="100%">
-        <tr>
+        <h2 class="academic-title">Academic Information</h2>
 
-            <!-- Left Menu -->
-            <td width="20%" valign="top">
+        <p class="academic-subtitle">
+            Access your notifications, attendance, calendar and study materials.
+        </p>
 
-                <a href="notification.html">
-                    <button style="width:150px;">Notification</button>
-                </a>
+        <!-- MAIN ACADEMIC LAYOUT -->
+        <table class="academic-layout" width="100%">
+            <tr>
 
-                <br><br>
+                <!-- LEFT MENU -->
+                <td class="academic-menu">
 
-                <a href="calendar.html">
-                    <button style="width:150px;">Calendar</button>
-                </a>
+                    <a href="notification.html">
+                        <button>Notification</button>
+                    </a>
 
-                <br><br>
+                    <a href="calendar.html">
+                        <button>Calendar</button>
+                    </a>
 
-                 <a href="attendance.html"><button style="width:150px;">Attendance</button></a>
+                    <a href="attendance.html">
+                        <button class="academic-active">Attendance</button>
+                    </a>
 
-                <br><br>
+                    <a href="material.html">
+                        <button>Material</button>
+                    </a>
 
-                <a href="material.html">
-                    <button style="width:150px;">Material</button>
-                </a>
+                    <a href="sgpa.html">
+                        <button>SGPA/CGPA</button>
+                    </a>
 
-                <br><br>
+                </td>
 
-                <a href="sgpa.html">
-                    <button style="width:150px;">SGPA/CGPA</button>
-                </a>
-            </td>
+                <!-- VERTICAL LINE -->
+                <td class="academic-divider-cell">
+                    <div class="academic-divider"></div>
+                </td>
 
-            <!-- Vertical Line -->
-            <td width="5%">
-                <hr style="height:300px; width:1px;">
-            </td>
+                <!-- ATTENDANCE CONTENT -->
+                <td class="attendance-section">
 
-            <!-- Attendance Section -->
-             <td valign="top">
+                    <div class="attendance-content-card">
 
-    <div class="attendance-card">
+                        <h2>Attendance</h2>
 
-        <h2>Attendance</h2>
+                        <div class="attendance-main">
 
-        <div class="attendance-content">
+                            <div class="attendance-circle">
 
-            <div class="attendance-circle">
-                <span>75%</span>
-            </div>
+                                <span>80%</span>
 
-            <div class="attendance-details">
+                            </div>
 
-                <h3>Current Attendance</h3>
+                            <div class="attendance-details">
 
-                <p>
-                    Your attendance is <b>75%</b>.
-                </p>
+                                <h3>Current Attendance</h3>
 
-                <p>
-                    Minimum required attendance is <b>75%</b>.
-                </p>
+                                <p>
+                                    Your attendance is <b>80%</b>.
+                                </p>
 
-                <p>
-                    Keep attending classes regularly to maintain eligibility.
-                </p>
+                                <p>
+                                    Minimum required attendance is <b>80%</b>.
+                                </p>
 
-            </div>
+                                <p>
+                                    Keep attending classes regularly to maintain eligibility.
+                                </p>
 
-        </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </td>
+
+            </tr>
+        </table>
 
     </div>
 
-  </td>
-
-        </tr>
-    </table>
-
 </div>
-</div>
-
+<script src="script.js"></script>
 </body>
 </html>

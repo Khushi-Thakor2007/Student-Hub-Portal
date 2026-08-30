@@ -64,3 +64,4 @@ toggle -- inbuilt method
 on click -- 
 === - check the datatype and value to 
 alert -- use for notification
+id -- javascript can find each textbox
