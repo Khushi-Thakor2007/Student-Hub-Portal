@@ -3,22 +3,39 @@ function loginUser()
     //get value from the user
     let email =document.getElementById("email").value;
     let password =document.getElementById("password").value;
-
+    let emailpattern=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    let passwordpattern=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     //check if email textbox is empty or not
-    if(email=="")
+    if(email==="")
     {
         alert("Please enter your email!");
         return;
     }
-    //check if email textbox is empty or not
-    if(password=="")
+    if(!emailpattern.test(email))
+    {
+        alert("Please enter a valid email address!");
+        return;
+    }
+    // check if email textbox is empty or not
+    if(password==="")
     {
         alert("Please enter your password!");
+        return;
+    }
+    if (!passwordpattern.test(password))
+    {
+        alert("Password must contain at least 8 characters, one uppercase letter, one lowercase letter, one number and one special character!");
+        return;
+    }
+    if(password.length<8)
+    {
+        alert("Password must contain at least 8 characters!");
         return;
     }
     //successfully done message
     alert("Login Successful!");
 }
+
 function registeruser()
 {
 let name=document.getElementById("name").value;
@@ -28,49 +45,78 @@ let mobile=document.getElementById("mobile").value;
 let password=document.getElementById("registerPassword").value;
 let confirmPassword=document.getElementById("confirmPassword").value;
 let terms=document.getElementById("terms").checked;
-
-if(name=="")
-{
-alert("Please enter your full name!");
-return;
-}
-if(studentId=="")
-{
-alert("Please enter your Student ID!");
-return;
-}
-if(email=="")
-{
-alert("Please enter your email!");
-return;
-}
-if(mobile=="")
-{ 
-alert("Please enter your mobile number!");
-return;
-}
-if(password=="")
-{
-alert("Please enter your password!");
-return;
-}
-if(confirmPassword=="")
-{
-alert("Please confirm your password!");
-return;
-}
-if(password!=confirmPassword)
-{
-alert("Passwords do not match!");
-return;
-}
-if(!terms)
-{
-alert("Please agree to the Terms & Conditions!");
-return;
-}
-alert("Registration Successful!");
-}
+let namePattern = /^[A-Za-z ]{3,40}$/;
+let studentIdPattern = /^[A-Za-z0-9]{4,20}$/;
+let emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+let mobilePattern = /^[6-9][0-9]{9}$/;
+let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; 
+     if(name==="")
+    {
+        alert("Please enter your full name!");
+        return;
+    }
+    if (!namePattern.test(name)) 
+    {
+        alert("Name should contain only letters and spaces!");
+        return;
+    }
+    if(studentId==="")
+    {
+        alert("Please enter your Student ID!");
+    return;
+    }
+    if (!studentIdPattern.test(studentId)) 
+    {
+        alert("Please enter a valid Student ID!");
+        return;
+    }
+    if(email==="")
+    {
+        alert("Please enter your email!");
+        return;
+    }
+    if (!emailPattern.test(email)) 
+    {
+        alert("Please enter a valid email address!");
+        return;
+    }
+    if(mobile==="")
+    { 
+        alert("Please enter your mobile number!");
+        return;
+    }
+    if (!mobilePattern.test(mobile)) 
+    {
+        alert("Please enter a valid 10-digit mobile number!");
+        return false;
+    }
+    if(password==="")
+    {
+        alert("Please enter your password!");
+        return;
+    }
+    if (!passwordPattern.test(password)) 
+    {
+        alert("Password must contain at least 8 characters, " + "one uppercase letter, one lowercase letter, " + "one number and one special character!");
+        return false;
+    }
+    if(confirmPassword==="")
+    {
+        alert("Please confirm your password!");
+        return;
+    }
+    if(password!=confirmPassword)
+    {
+        alert("Passwords do not match!");
+        return;
+    }
+    if(!terms)
+    {
+        alert("Please agree to the Terms & Conditions!");
+        return;
+    }
+        alert("Registration Successful!");
+    }
 /*=================== light- dark mode =====================*/
 function toggleTheme()
 {
