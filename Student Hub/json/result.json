@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "subject": "Web Development",
+        "grade": "A+",
+        "credits": 3,
+        "status": "Pass"
+    },
+    {
+        "id": 2,
+        "subject": "Data Structures",
+        "grade": "A",
+        "credits": 4,
+        "status": "Pass"
+    },
+    {
+        "id": 3,
+        "subject": "Computer Networks",
+        "grade": "--",
+        "credits": 4,
+        "status": "Pending"
+    },
+    {
+        "id": 4,
+        "subject": "Mathematics",
+        "grade": "A+",
+        "credits": 4,
+        "status": "Pass"
+    }
+]

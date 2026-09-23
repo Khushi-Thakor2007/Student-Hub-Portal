@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "💻 Tech Workshop",
+        "date": "25 July 2026",
+        "time": "10:00 AM",
+        "venue": "Seminar Hall",
+        "description": "Learn about Web Development, AI and modern technologies.",
+        "image": "event1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "🎭 Cultural Festival",
+        "date": "30 July 2026",
+        "time": "5:00 PM",
+        "venue": "College Ground",
+        "description": "Enjoy dance, music, food stalls and cultural performances.",
+        "image": "event2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "🏆 Sports Tournament",
+        "date": "5 August 2026",
+        "time": "9:00 AM",
+        "venue": "Sports Complex",
+        "description": "Participate in cricket, football, badminton and indoor games.",
+        "image": "event3.jpg"
+    }
+]

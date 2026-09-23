@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "📢 New Assignment Uploaded",
+        "message": "Web Development Assignment-3 has been uploaded. Submit it before 28 July 2026.",
+        "time": "10 min ago"
+    },
+    {
+        "id": 2,
+        "title": "📝 Mid Semester Exam",
+        "message": "Mid Semester Examination timetable has been published. Check your exam schedule.",
+        "time": "30 min ago"
+    },
+    {
+        "id": 3,
+        "title": "🎉 Cultural Fest Registration",
+        "message": "Registration for Cultural Fest is now open. Last date: 5 August 2026.",
+        "time": "1 hour ago"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "fileName": "Practical_List_ITUE203_WD.pdf",
+        "title": "Web Development Practical List",
+        "fileType": "PDF",
+        "icon": "pdf.png"
+    },
+    {
+        "id": 2,
+        "fileName": "ITUE203_WDF_Syllabus.pdf",
+        "title": "Web Development Syllabus",
+        "fileType": "PDF",
+        "icon": "pdf.png"
+    }
+]
