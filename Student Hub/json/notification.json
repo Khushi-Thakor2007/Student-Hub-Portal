@@ -16,5 +16,11 @@
         "title": "🎉 Cultural Fest Registration",
         "message": "Registration for Cultural Fest is now open. Last date: 5 August 2026.",
         "time": "1 hour ago"
+    },
+    {
+        "id": 4,
+        "title": "Hackathon ",
+        "message": "Registration for Hackathon is now open. Last date: 16 October 2026.",
+        "time": "10 hour ago"
     }
 ]

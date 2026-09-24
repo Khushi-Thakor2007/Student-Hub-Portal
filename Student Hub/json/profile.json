@@ -1,9 +1,12 @@
 {
     "name": "Student Name",
+    "college":"CHARUSAT",
     "studentId": "123456",
     "department": "Computer Engineering",
     "semester": 3,
     "mobile": "9876543210",
     "email": "student@example.com",
-    "address": "Ahmedabad"
+    "address": "Changa",
+    "institute":"DEPSTAR"
+
 }

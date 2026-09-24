@@ -256,3 +256,64 @@ if (document.getElementById("materialContainer")) {
             console.error("Error loading materials:", error);
         });
 }
+// ================= NOTIFICATION JSON =================
+
+if (document.getElementById("notificationContainer")) {
+
+    fetch("json/notification.json")
+        .then(response => response.json())
+        .then(notifications => {
+
+            const container = document.getElementById("notificationContainer");
+
+            notifications.forEach(notification => {
+
+                container.innerHTML += `
+                    <div class="notification-box">
+
+                        <div class="notification-info">
+
+                            <h4>${notification.title}</h4>
+
+                            <p>
+                                ${notification.message}
+                            </p>
+
+                        </div>
+
+                        <span class="notification-time">
+                            ${notification.time}
+                        </span>
+
+                    </div>
+                `;
+
+            });
+
+        })
+        .catch(error => {
+            console.error("Error loading notifications:", error);
+        });
+}
+// ================= PROFILE JSON =================
+
+if (document.getElementById("profileName")) {
+
+    fetch("json/profile.json")
+        .then(response => response.json())
+        .then(profile => {
+
+            document.getElementById("profileName").textContent = profile.name;
+            document.getElementById("profileStudentId").textContent = profile.studentId;
+            document.getElementById("profileDepartment").textContent = profile.department;
+            document.getElementById("profileSemester").textContent = profile.semester;
+            document.getElementById("profileMobile").textContent = profile.mobile;
+            document.getElementById("profileEmail").textContent = profile.email;
+            document.getElementById("profileAddress").textContent = profile.address;
+            document.getElementById("profileInstitute").textContent = profile.institute;
+
+        })
+        .catch(error => {
+            console.error("Error loading profile:", error);
+        });
+}
