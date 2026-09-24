@@ -172,3 +172,87 @@ themeToggle.addEventListener("click", function () {
     }
 
 });
+// ================= EVENTS JSON =================
+
+if (document.getElementById("eventsContainer")) {
+
+    fetch("json/events.json")
+        .then(response => response.json())
+        .then(events => {
+
+            const container = document.getElementById("eventsContainer");
+
+            events.forEach(event => {
+
+                container.innerHTML += `
+                    <div class="event-box">
+
+                        <img src="${event.image}" alt="${event.title}">
+
+                        <div class="event-details">
+
+                            <h3>${event.title}</h3>
+
+                            <p><b>Date:</b> ${event.date}</p>
+
+                            <p><b>Time:</b> ${event.time}</p>
+
+                            <p><b>Venue:</b> ${event.venue}</p>
+
+                            <p>${event.description}</p>
+
+                        </div>
+
+                        <button>Register</button>
+
+                    </div>
+                `;
+
+            });
+
+        })
+        .catch(error => {
+            console.error("Error loading events:", error);
+        });
+}
+// ================= MATERIAL JSON =================
+
+if (document.getElementById("materialContainer")) {
+
+    fetch("json/material.json")
+        .then(response => response.json())
+        .then(materials => {
+
+            console.log(materials);
+
+            const container = document.getElementById("materialContainer");
+
+            materials.forEach(material => {
+
+                container.innerHTML += `
+                    <div class="material-box">
+
+                        <img src="${material.icon}" alt="${material.fileType}">
+
+                        <div class="material-details">
+
+                            <h3>${material.fileName}</h3>
+
+                            <p>${material.title}</p>
+
+                        </div>
+
+                        <a href="${material.fileName}" download>
+                            <button>Download</button>
+                        </a>
+
+                    </div>
+                `;
+
+            });
+
+        })
+        .catch(error => {
+            console.error("Error loading materials:", error);
+        });
+}

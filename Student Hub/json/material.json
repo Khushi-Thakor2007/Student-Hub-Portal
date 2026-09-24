@@ -12,5 +12,19 @@
         "title": "Web Development Syllabus",
         "fileType": "PDF",
         "icon": "pdf.png"
-    }
+    },
+     {
+        "id": 3,
+        "fileName": "CN_Syllabus.pdf",
+        "title": "Computre Networks Syllabus",
+        "fileType": "PDF",
+        "icon": "pdf.png"
+    },
+    {
+    "id": 4,
+    "fileName": "DSA_Notes.pdf",
+    "title": "Data Structures Notes",
+    "fileType": "PDF",
+    "icon": "pdf.png"
+}
 ]

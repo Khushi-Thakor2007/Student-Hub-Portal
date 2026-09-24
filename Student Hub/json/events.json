@@ -5,8 +5,7 @@
         "date": "25 July 2026",
         "time": "10:00 AM",
         "venue": "Seminar Hall",
-        "description": "Learn about Web Development, AI and modern technologies.",
-        "image": "event1.jpg"
+        "description": "Learn about Web Development, AI and modern technologies."
     },
     {
         "id": 2,
@@ -14,8 +13,7 @@
         "date": "30 July 2026",
         "time": "5:00 PM",
         "venue": "College Ground",
-        "description": "Enjoy dance, music, food stalls and cultural performances.",
-        "image": "event2.jpg"
+        "description": "Enjoy dance, music, food stalls and cultural performances."
     },
     {
         "id": 3,
@@ -23,7 +21,14 @@
         "date": "5 August 2026",
         "time": "9:00 AM",
         "venue": "Sports Complex",
-        "description": "Participate in cricket, football, badminton and indoor games.",
-        "image": "event3.jpg"
+        "description": "Participate in cricket, football, badminton and indoor games."
+    },
+    {
+        "id": 4,
+        "title": "Hackathon",
+        "date": "12 October 2026",
+        "time": "9:00 AM",
+        "venue": "Lab A7 Bulding",
+        "description": "Participate in Hackathon."
     }
 ]
