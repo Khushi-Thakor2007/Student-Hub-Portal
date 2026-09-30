@@ -602,13 +602,11 @@ select:focus
     {
         flex-direction:column;
     }
-    flex-direction:column;
-    }
+}
 .page-title
     {
         font-size:30px;
     }
-}
 /* .page-logo{
     font-family: "Homemade Apple", cursive;
     font-size: 52px;

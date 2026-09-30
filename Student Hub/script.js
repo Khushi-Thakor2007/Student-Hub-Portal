@@ -115,8 +115,33 @@ let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$
         alert("Please agree to the Terms & Conditions!");
         return;
     }
-        alert("Registration Successful!");
-    }
+    fetch("php/register.php", 
+    {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: new URLSearchParams({
+        name: name,
+        studentId: studentId,
+        email: email,
+        mobile: mobile,
+        password: password
+    })
+})
+.then(response => response.text())
+.then(data => {
+
+    console.log("PHP response:", data);
+
+    alert("PHP RESPONSE:\n" + data);
+
+})
+.catch(error => {
+    console.error("Registration error:", error);
+    alert("Fetch error: " + error);
+});
+}
 /*=================== light- dark mode =====================*/
 function toggleTheme()
 {
