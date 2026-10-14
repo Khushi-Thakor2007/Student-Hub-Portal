@@ -1,202 +1,297 @@
-function loginUser()
-{
-    //get value from the user
-    let email =document.getElementById("email").value;
-    let password =document.getElementById("password").value;
-    let emailpattern=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    let passwordpattern=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-    //check if email textbox is empty or not
-    if(email==="")
-    {
-        alert("Please enter your email!");
-        return;
-    }
-    if(!emailpattern.test(email))
-    {
-        alert("Please enter a valid email address!");
-        return;
-    }
-    // check if email textbox is empty or not
-    if(password==="")
-    {
-        alert("Please enter your password!");
-        return;
-    }
-    if (!passwordpattern.test(password))
-    {
-        alert("Password must contain at least 8 characters, one uppercase letter, one lowercase letter, one number and one special character!");
-        return;
-    }
-    if(password.length<8)
-    {
-        alert("Password must contain at least 8 characters!");
-        return;
-    }
-    //successfully done message
-    alert("Login Successful!");
+function loginUser() 
+{ 
+    let email = document.getElementById("email").value; 
+    let password = document.getElementById("password").value; 
+
+    let emailpattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
+
+   let passwordpattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,128}$/;
+
+    if(email === "") 
+    { 
+        alert("Please enter your email!"); 
+        return; 
+    } 
+
+    if(!emailpattern.test(email)) 
+    { 
+        alert("Please enter a valid email address!"); 
+        return; 
+    } 
+
+    if(password === "") 
+    { 
+        alert("Please enter your password!"); 
+        return; 
+    } 
+
+    if(!passwordpattern.test(password)) 
+    { 
+        alert("Password must contain at least 8 characters, one uppercase letter, one lowercase letter, one number and one special character!"); 
+        return; 
+    } 
+
+    fetch("php/login.php", 
+    { 
+        method: "POST", 
+
+        headers: 
+        { 
+            "Content-Type": "application/x-www-form-urlencoded" 
+        }, 
+
+        body: new URLSearchParams(
+        { 
+            email: email, 
+            password: password 
+        }) 
+    }) 
+
+    .then(response => response.json()) 
+
+    .then(data => 
+    { 
+        console.log("PHP response:", data); 
+
+        if(data.success) 
+        { 
+            alert("Welcome, " + data.user.name + "!"); 
+
+            window.location.href = data.redirect; // Redirect to the appropriate page based on the user's role
+        } 
+        else 
+        { 
+            alert(data.message); 
+        } 
+    }) 
+
+    .catch(error => 
+    { 
+        console.error("Login error:", error); 
+        alert("Login error. Please try again."); 
+    }); 
+
 }
 
 function registeruser()
 {
-let name=document.getElementById("name").value;
-let studentId=document.getElementById("studentId").value;
-let email=document.getElementById("email").value;
-let mobile=document.getElementById("mobile").value;
-let password=document.getElementById("registerPassword").value;
-let confirmPassword=document.getElementById("confirmPassword").value;
-let terms=document.getElementById("terms").checked;
-let namePattern = /^[A-Za-z ]{3,40}$/;
-let studentIdPattern = /^[A-Za-z0-9]{4,20}$/;
-let emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-let mobilePattern = /^[6-9][0-9]{9}$/;
-let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; 
-     if(name==="")
+    let name = document.getElementById("name").value.trim();
+    let studentId = document.getElementById("studentId").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let mobile = document.getElementById("mobile").value.trim();
+    let password = document.getElementById("registerPassword").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
+    let terms = document.getElementById("terms").checked;
+
+    let namePattern = /^[A-Za-z ]{3,40}$/;
+    let studentIdPattern = /^[A-Za-z0-9]{4,20}$/;
+    let emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+    let mobilePattern = /^[6-9][0-9]{9}$/;
+    let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,128}$/;
+
+    if (name === "")
     {
         alert("Please enter your full name!");
         return;
     }
-    if (!namePattern.test(name)) 
+
+    if (!namePattern.test(name))
     {
-        alert("Name should contain only letters and spaces!");
+        alert("Name should contain only letters and spaces (3–40 characters)!");
         return;
     }
-    if(studentId==="")
+
+    if (studentId === "")
     {
         alert("Please enter your Student ID!");
-    return;
-    }
-    if (!studentIdPattern.test(studentId)) 
-    {
-        alert("Please enter a valid Student ID!");
         return;
     }
-    if(email==="")
+
+    if (!studentIdPattern.test(studentId))
+    {
+        alert("Please enter a valid Student ID (4–20 letters or numbers)!");
+        return;
+    }
+
+    if (email === "")
     {
         alert("Please enter your email!");
         return;
     }
-    if (!emailPattern.test(email)) 
+
+    if (email.length > 254 || !emailPattern.test(email))
     {
         alert("Please enter a valid email address!");
         return;
     }
-    if(mobile==="")
-    { 
+
+    if (mobile === "")
+    {
         alert("Please enter your mobile number!");
         return;
     }
-    if (!mobilePattern.test(mobile)) 
+
+    if (!mobilePattern.test(mobile))
     {
         alert("Please enter a valid 10-digit mobile number!");
-        return false;
+        return;
     }
-    if(password==="")
+
+    if (password === "")
     {
         alert("Please enter your password!");
         return;
     }
-    if (!passwordPattern.test(password)) 
+
+    if (!passwordPattern.test(password))
     {
-        alert("Password must contain at least 8 characters, " + "one uppercase letter, one lowercase letter, " + "one number and one special character!");
-        return false;
+        alert(
+            "Password must contain 8–128 characters, " +
+            "one uppercase letter, one lowercase letter, " +
+            "one number and one special character (@$!%*?&)."
+        );
+        return;
     }
-    if(confirmPassword==="")
+
+    if (confirmPassword === "")
     {
         alert("Please confirm your password!");
         return;
     }
-    if(password!=confirmPassword)
+
+    if (password !== confirmPassword)
     {
         alert("Passwords do not match!");
         return;
     }
-    if(!terms)
+
+    if (!terms)
     {
         alert("Please agree to the Terms & Conditions!");
         return;
     }
-    fetch("php/register.php", 
+    const registerForm = document.getElementById("registerForm");
+    const submitButton = registerForm
+        ? registerForm.querySelector('button[type="submit"]')
+        : null;
+
+    if (submitButton && submitButton.disabled)
     {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-    },
-    body: new URLSearchParams({
-        name: name,
-        studentId: studentId,
-        email: email,
-        mobile: mobile,
-        password: password
+        return;
+    }
+
+    if (submitButton)
+    {
+        submitButton.disabled = true;
+        submitButton.textContent = "Registering...";
+    }
+    const messageElement = document.getElementById("registerMessage");
+
+    function showMessage(message, success)
+    {
+        if (messageElement)
+        {
+            messageElement.textContent = message;
+            messageElement.style.color = success ? "green" : "red";
+        }
+        else
+        {
+            alert(message);
+        }
+    }
+
+    fetch("php/register.php",
+    {
+        method: "POST",
+        headers:
+        {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams(
+        {
+            name: name,
+            studentId: studentId,
+            email: email,
+            mobile: mobile,
+            password: password,
+            confirmPassword: confirmPassword,
+            terms: terms ? "1" : "0"
+        })
     })
-})
-.then(response => response.text())
-.then(data => {
+    .then(response =>
+    {
+        if (!response.ok)
+        {
+            throw new Error("Server returned HTTP " + response.status);
+        }
 
-    console.log("PHP response:", data);
+        return response.json();
+    })
+    .then(data =>
+    {
+        console.log("PHP response:", data);
 
-    alert("PHP RESPONSE:\n" + data);
+        if (data.success)
+        {
+            showMessage(data.message || "Registration successful!", true);
 
-})
-.catch(error => {
-    console.error("Registration error:", error);
-    alert("Fetch error: " + error);
-});
+            setTimeout(() =>
+            {
+                window.location.href = "Login.html";
+            }, 1000);
+        }
+        else
+        {
+            showMessage(data.message || "Registration failed. Please try again.", false);
+
+            if (submitButton)
+            {
+                submitButton.disabled = false;
+                submitButton.textContent = "Register";
+            }
+        }
+    })
+    .catch(error =>
+    {
+        console.error("Registration error:", error);
+
+        showMessage(
+            "Unable to complete registration. Please check your connection and try again.",
+            false
+        );
+
+        if (submitButton)
+        {
+            submitButton.disabled = false;
+            submitButton.textContent = "Register";
+        }
+    });
 }
 /*=================== light- dark mode =====================*/
-function toggleTheme()
-{
-document.body.classList.toggle("dark-theme");
 
-let button=document.querySelector(".theme-toggle");
+const themeToggle = document.querySelector(".theme-toggle");
 
-if(document.body.classList.contains("dark-theme"))
-{
-button.innerHTML="☀️";
-localStorage.setItem("theme","dark");
-}
-else
-{
-button.innerHTML="🌙";
-localStorage.setItem("theme","light");
-}
-}
-window.addEventListener("DOMContentLoaded",function()
-{
-let theme=localStorage.getItem("theme");
-let button=document.querySelector(".theme-toggle");
-
-if(theme=="dark")
-{
-document.body.classList.add("dark-theme");
-button.innerHTML="☀️";
-}
-});
-// ================= DARK / LIGHT THEME ================= for all the pages exsept login and register
-
-const themeToggle = document.getElementById("themeToggle");
-
-// Load saved theme
-if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-theme");
-    themeToggle.textContent = "☀️";
-} else {
-    themeToggle.textContent = "🌙";
-}
-
-// Toggle theme
-themeToggle.addEventListener("click", function () {
-
-    document.body.classList.toggle("dark-theme");
-
-    if (document.body.classList.contains("dark-theme")) {
-        localStorage.setItem("theme", "dark");
+if (themeToggle) {
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-theme");
         themeToggle.textContent = "☀️";
     } else {
-        localStorage.setItem("theme", "light");
         themeToggle.textContent = "🌙";
     }
 
-});
+    themeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+
+        if (document.body.classList.contains("dark-theme")) {
+            localStorage.setItem("theme", "dark");
+            themeToggle.textContent = "☀️";
+        } else {
+            localStorage.setItem("theme", "light");
+            themeToggle.textContent = "🌙";
+        }
+    });
+}
+
 // ================= EVENTS JSON =================
 
 if (document.getElementById("eventsContainer")) {
@@ -341,4 +436,4 @@ if (document.getElementById("profileName")) {
         .catch(error => {
             console.error("Error loading profile:", error);
         });
-}
+    }

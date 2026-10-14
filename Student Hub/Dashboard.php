@@ -1,3 +1,43 @@
+
+<?php
+session_start();
+
+$timeout = 900; // 15 minutes
+
+// Reject users who have not logged in
+if (!isset($_SESSION["user_id"])) {
+    header("Location: Login.html");
+    exit;
+}
+
+// Expire inactive sessions
+if (
+    !isset($_SESSION["last_activity"]) ||
+    (time() - $_SESSION["last_activity"]) > $timeout
+) {
+    $_SESSION = [];
+    session_destroy();
+
+    header("Location: Login.html?timeout=1");
+    exit;
+}
+
+// Update last activity
+$_SESSION["last_activity"] = time();
+
+// Only students may access this dashboard
+if (($_SESSION["role"] ?? "") !== "student") {
+    if (($_SESSION["role"] ?? "") === "admin") {
+        header("Location: AdminDashboard.php");
+        exit;
+    }
+
+    http_response_code(403);
+    exit("Access denied.");
+}
+
+$username = $_SESSION["name"];
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,20 +58,19 @@
           <div class="header">
 
              <div class="logo-title">
-             <img src="logo.png" alt="Logo">
+            <img src="Pictures/Logo.png" alt="Student Hub Logo" width="60" height="60">
 
                <h1>Student Hub</h1>
           </div>
 
-              <a href="logout.html" class="register-btn">LOGOUT</a>
+             <a href="php/logout.php" class="register-btn">LOGOUT</a>
 
         </div>
     <hr>
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="home.html">HOME</a>
 
-        <a href="dashboard.html" class="active">DASHBOARD</a>
+        <a href="dashboard.php" class="active">DASHBOARD</a>
 
         <a href="profile.html">PROFILE</a>
 
@@ -49,6 +88,10 @@
     <hr>
 
 <div class="dashboard-content">
+
+    <h2 class="welcome-user">
+        Hi, <?php echo htmlspecialchars($username); ?> 👋
+    </h2>
 
     <p class="dashboard-subtitle">
         Welcome back! Here's a quick overview of your academic activities.

@@ -4,45 +4,123 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Student Hub - Register</title>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="style.css">
     </head>
+
 <body>
     <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
-        <div class="container">
-            <div class="header">
-                <div class="logo-title">
-                <img src="Logo.png" alt="Logo">
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-title">
+                 <img src="Pictures/Logo.png" alt="Student Hub Logo" width="60" height="60">
                 <h1>Student Hub</h1>
             </div>
+
             <a href="Login.html" class="register-btn">Login</a>
         </div>
-    <hr>
-    <div class="register-card">
-        <h2>Create an Account</h2>
 
-    <form class="register-form" onsubmit="registeruser();return false;">
-        <input type="text" id="name" placeholder="Full Name">
-        <input type="text" id="studentId" placeholder="Student ID">
-        <input type="text" id="email" placeholder="Email Address">
-        <input type="text" id="mobile" placeholder="Mobile Number">
-        <input type="password" id="registerPassword" placeholder="Password">
-        <input type="password" id="confirmPassword" placeholder="Confirm Password">
-        <label class="terms">
-        <input type="checkbox" id="terms">
-            I agree to the Terms & Conditions
-        </label>
-            <button type="submit">Register</button>
-            <p class="login-link">
-                Already have an account?
-                <a href="Login.html">Login</a>
-            </p>    
-    </form>
-            </div>
+        <hr>
+
+        <div class="register-card">
+            <h2>Create an Account</h2>
+
+            <form id="registerForm" class="register-form"
+                  onsubmit="registeruser(); return false;">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    minlength="3"
+                    maxlength="40"
+                    pattern="[A-Za-z ]{3,40}"
+                    title="Enter a name containing 3–40 letters and spaces."
+                    autocomplete="name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="studentId"
+                    placeholder="Student ID"
+                    minlength="4"
+                    maxlength="20"
+                    pattern="[A-Za-z0-9]{4,20}"
+                    title="Student ID must contain 4–20 letters or numbers."
+                    autocomplete="username"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    maxlength="254"
+                    autocomplete="email"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="mobile"
+                    placeholder="Mobile Number"
+                    inputmode="numeric"
+                    pattern="[6-9][0-9]{9}"
+                    maxlength="10"
+                    minlength="10"
+                    title="Enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9."
+                    autocomplete="tel"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Password"
+                    minlength="8"
+                    maxlength="128"
+                    autocomplete="new-password"
+                    title="Use at least 8 characters with uppercase, lowercase, a number, and a special character."
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm Password"
+                    minlength="8"
+                    maxlength="128"
+                    autocomplete="new-password"
+                    required
+                >
+
+                <label class="terms">
+                    <input type="checkbox" id="terms" required>
+                    I agree to the Terms & Conditions
+                </label>
+
+                <button type="submit">Register</button>
+
+                <p id="registerMessage"
+                   role="status"
+                   aria-live="polite"></p>
+
+                <p class="login-link">
+                    Already have an account?
+                    <a href="Login.html">Login</a>
+                </p>
+
+            </form>
         </div>
-        <script src="script.js"></script>
-    </body>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
